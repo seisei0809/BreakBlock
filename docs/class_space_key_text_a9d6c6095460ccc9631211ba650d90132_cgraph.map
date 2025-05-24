@@ -1,0 +1,7 @@
+<map id="SpaceKeyText::Update" name="SpaceKeyText::Update">
+<area shape="rect" id="Node000001" title="毎フレーム呼び出される関数" alt="" coords="5,5,162,32"/>
+<area shape="rect" id="Node000002" href="$class_scene_manager.html#a8aef1adb47086c26f201f745ac9e18bd" title="シーンを変更する" alt="" coords="210,5,408,32"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="162,16,194,16,194,21,162,21"/>
+<area shape="rect" id="Node000003" href="$class_scene.html#a31e0e1b9ce39bd9f5ec160835cc94d44" title="ObjectのStart関数を呼び出す" alt="" coords="456,5,550,32"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="408,16,441,16,441,21,408,21"/>
+</map>

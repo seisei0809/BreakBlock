@@ -1,0 +1,5 @@
+<map id="SceneManager::ChangeScene" name="SceneManager::ChangeScene">
+<area shape="rect" id="Node000001" title="シーンを変更する" alt="" coords="5,5,204,32"/>
+<area shape="rect" id="Node000002" href="$class_scene.html#a31e0e1b9ce39bd9f5ec160835cc94d44" title="ObjectのStart関数を呼び出す" alt="" coords="252,5,346,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="204,16,236,16,236,21,204,21"/>
+</map>

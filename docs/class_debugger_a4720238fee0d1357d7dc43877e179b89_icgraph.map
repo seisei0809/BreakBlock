@@ -1,0 +1,17 @@
+<map id="Debugger::CheckHR" name="Debugger::CheckHR">
+<area shape="rect" id="Node000001" title="処理が成功しているかどうか" alt="" coords="273,157,416,184"/>
+<area shape="rect" id="Node000002" href="$class_audio_player.html#a719b7bed7176a26dbab4297879e3b248" title="コンストラクタ" alt="" coords="30,5,200,32"/>
+<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="324,146,282,94,254,68,223,46,198,35,200,30,226,42,258,64,286,91,328,143"/>
+<area shape="rect" id="Node000003" href="$class_sprite.html#a054a4c340c14c3d218b99e484bf83d21" title="描画" alt="" coords="68,56,162,83"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="313,150,272,122,224,97,162,79,164,74,226,92,274,118,315,146"/>
+<area shape="rect" id="Node000004" href="$class_device_manager.html#aaebfb2b6f77b010dffd3fc74276c21f1" title="デバイスの初期化" alt="" coords="25,107,205,133"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="265,156,178,137,179,131,266,151"/>
+<area shape="rect" id="Node000005" href="$class_graphics_manager.html#a70ae76ea1bb9c7060f7af0288a6dab70" title="グラフィックスパイプラインの初期化" alt="" coords="14,157,216,184"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="258,173,216,173,216,168,258,168"/>
+<area shape="rect" id="Node000006" href="$class_loading_manager.html#a651245cb43cfd0ad9843df3be154b982" title="コンストラクタ" alt="" coords="5,208,225,235"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="266,191,179,210,178,205,265,185"/>
+<area shape="rect" id="Node000007" href="$class_audio_player.html#a6692352ffc2b0eb89c58e2ad4892f0d0" title="再生する" alt="" coords="52,259,178,285"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="315,196,274,223,226,249,179,264,177,259,224,244,272,219,313,191"/>
+<area shape="rect" id="Node000008" href="$class_graphics_manager.html#a4106bf03db7886f2860045407a8a4631" title="描画" alt="" coords="28,309,202,336"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="328,199,286,250,258,277,226,300,200,311,198,306,223,295,254,273,282,247,324,195"/>
+</map>
