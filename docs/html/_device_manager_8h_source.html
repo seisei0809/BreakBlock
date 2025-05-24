@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BreakBlock: BreakBlock/DeviceManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BreakBlock
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_device_manager_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DeviceManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;AllSetting.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// ここでDevice関係を管理</span></div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_device_manager.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_device_manager.html">DeviceManager</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_device_manager.html#ad05a10086d8787232d73b908fe2a50be">InitWindow</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_device_manager.html#aaebfb2b6f77b010dffd3fc74276c21f1">InitDevice</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_device_manager.html#a299340d37fcd7a6e03142bf9487de498">ReleaseDevice</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_device_manager.html#aa9974f20e390aa8d2d811a31883a718d">   28</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12Device* <a class="code hl_function" href="class_device_manager.html#aa9974f20e390aa8d2d811a31883a718d">GetDevice</a>() { <span class="keywordflow">return</span> _dev; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_device_manager.html#a769be907ba7fc2438dfd83a6e21015da">   34</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> IDXGIFactory6* <a class="code hl_function" href="class_device_manager.html#a769be907ba7fc2438dfd83a6e21015da">GetDXGI</a>() { <span class="keywordflow">return</span> _dxgiFactory; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_device_manager.html#ab42287892f9b8847103ac2fd799d5a07">   40</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> IDXGISwapChain4* <a class="code hl_function" href="class_device_manager.html#ab42287892f9b8847103ac2fd799d5a07">GetSwapChain</a>() { <span class="keywordflow">return</span> _swapchain; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_device_manager.html#a1e528ce7e2ee41252e421ef7858dcfec">   46</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12CommandAllocator* <a class="code hl_function" href="class_device_manager.html#a1e528ce7e2ee41252e421ef7858dcfec">GetCMDAllocator</a>() { <span class="keywordflow">return</span> _cmdAllocator; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_device_manager.html#ad4e9cf5c93730ca21a2ac2d00d77fcec">   52</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12GraphicsCommandList* <a class="code hl_function" href="class_device_manager.html#ad4e9cf5c93730ca21a2ac2d00d77fcec">GetCMDList</a>() { <span class="keywordflow">return</span> _cmdList; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_device_manager.html#a73a9320c803943fcd2f3e4099759bb63">   58</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12CommandQueue* <a class="code hl_function" href="class_device_manager.html#a73a9320c803943fcd2f3e4099759bb63">GetCMDQueue</a>() { <span class="keywordflow">return</span> _cmdQueue; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_device_manager.html#a06e282261faec0fa65953b2d61aac102">   64</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12DescriptorHeap* <a class="code hl_function" href="class_device_manager.html#a06e282261faec0fa65953b2d61aac102">GetRTVHeap</a>() { <span class="keywordflow">return</span> _rtvHeap; }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_device_manager.html#a64b1cf9204285eef4857fc06ff71b91f">   71</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12Fence* <a class="code hl_function" href="class_device_manager.html#a64b1cf9204285eef4857fc06ff71b91f">GetFence</a>(INT i) { <span class="keywordflow">return</span> _fences[i]; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_device_manager.html#a739c857e99d2f8e5d99e590f54b3327c">   78</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> UINT64&amp; <a class="code hl_function" href="class_device_manager.html#a739c857e99d2f8e5d99e590f54b3327c">GetFenceVal</a>(INT i) { <span class="keywordflow">return</span> _fenceVals[i]; }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_device_manager.html#a9784da1750741a0cd4d6264a59298c64">   85</a></span>    <span class="keyword">inline</span> <span class="keyword">static</span> ID3D12Resource* <a class="code hl_function" href="class_device_manager.html#a9784da1750741a0cd4d6264a59298c64">GetBackBuffer</a>(INT index) { <span class="keywordflow">return</span> _backBuffers[index]; }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// Direct3Dのデバイス格納用</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">static</span> ID3D12Device* _dev;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// DXGI格納用</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">static</span> IDXGIFactory6* _dxgiFactory;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// スワップチェーン操作用</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">static</span> IDXGISwapChain4* _swapchain;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// コマンドアロケータ格納用</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">static</span> ID3D12CommandAllocator* _cmdAllocator;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// コマンドリスト操作用</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">static</span> ID3D12GraphicsCommandList* _cmdList;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// コマンドキュー操作用</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">static</span> ID3D12CommandQueue* _cmdQueue;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// RTVのヒープ領域格納用</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">static</span> ID3D12DescriptorHeap* _rtvHeap;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// 完了処理数格納用  </span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">static</span> VECTOR&lt;UINT64&gt; _fenceVals;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// フェンス立てる用</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">static</span> VECTOR&lt;ID3D12Fence*&gt; _fences;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// RTV用バックバッファ格納用</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">static</span> VECTOR&lt;ID3D12Resource*&gt; _backBuffers;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="ttc" id="aclass_device_manager_html"><div class="ttname"><a href="class_device_manager.html">DeviceManager</a></div><div class="ttdef"><b>Definition</b> DeviceManager.h:6</div></div>
+<div class="ttc" id="aclass_device_manager_html_a06e282261faec0fa65953b2d61aac102"><div class="ttname"><a href="class_device_manager.html#a06e282261faec0fa65953b2d61aac102">DeviceManager::GetRTVHeap</a></div><div class="ttdeci">static ID3D12DescriptorHeap * GetRTVHeap()</div><div class="ttdoc">RTVヒープ領域の取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:64</div></div>
+<div class="ttc" id="aclass_device_manager_html_a1e528ce7e2ee41252e421ef7858dcfec"><div class="ttname"><a href="class_device_manager.html#a1e528ce7e2ee41252e421ef7858dcfec">DeviceManager::GetCMDAllocator</a></div><div class="ttdeci">static ID3D12CommandAllocator * GetCMDAllocator()</div><div class="ttdoc">コマンドアロケータの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:46</div></div>
+<div class="ttc" id="aclass_device_manager_html_a299340d37fcd7a6e03142bf9487de498"><div class="ttname"><a href="class_device_manager.html#a299340d37fcd7a6e03142bf9487de498">DeviceManager::ReleaseDevice</a></div><div class="ttdeci">static void ReleaseDevice()</div><div class="ttdoc">デバイスのリリース</div><div class="ttdef"><b>Definition</b> DeviceManager.cpp:312</div></div>
+<div class="ttc" id="aclass_device_manager_html_a64b1cf9204285eef4857fc06ff71b91f"><div class="ttname"><a href="class_device_manager.html#a64b1cf9204285eef4857fc06ff71b91f">DeviceManager::GetFence</a></div><div class="ttdeci">static ID3D12Fence * GetFence(INT i)</div><div class="ttdoc">フェンスの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:71</div></div>
+<div class="ttc" id="aclass_device_manager_html_a739c857e99d2f8e5d99e590f54b3327c"><div class="ttname"><a href="class_device_manager.html#a739c857e99d2f8e5d99e590f54b3327c">DeviceManager::GetFenceVal</a></div><div class="ttdeci">static UINT64 &amp; GetFenceVal(INT i)</div><div class="ttdoc">フェンスの値の取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:78</div></div>
+<div class="ttc" id="aclass_device_manager_html_a73a9320c803943fcd2f3e4099759bb63"><div class="ttname"><a href="class_device_manager.html#a73a9320c803943fcd2f3e4099759bb63">DeviceManager::GetCMDQueue</a></div><div class="ttdeci">static ID3D12CommandQueue * GetCMDQueue()</div><div class="ttdoc">コマンドキューの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:58</div></div>
+<div class="ttc" id="aclass_device_manager_html_a769be907ba7fc2438dfd83a6e21015da"><div class="ttname"><a href="class_device_manager.html#a769be907ba7fc2438dfd83a6e21015da">DeviceManager::GetDXGI</a></div><div class="ttdeci">static IDXGIFactory6 * GetDXGI()</div><div class="ttdoc">DXGIの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:34</div></div>
+<div class="ttc" id="aclass_device_manager_html_a9784da1750741a0cd4d6264a59298c64"><div class="ttname"><a href="class_device_manager.html#a9784da1750741a0cd4d6264a59298c64">DeviceManager::GetBackBuffer</a></div><div class="ttdeci">static ID3D12Resource * GetBackBuffer(INT index)</div><div class="ttdoc">RTV用バックバッファの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:85</div></div>
+<div class="ttc" id="aclass_device_manager_html_aa9974f20e390aa8d2d811a31883a718d"><div class="ttname"><a href="class_device_manager.html#aa9974f20e390aa8d2d811a31883a718d">DeviceManager::GetDevice</a></div><div class="ttdeci">static ID3D12Device * GetDevice()</div><div class="ttdoc">デバイスの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:28</div></div>
+<div class="ttc" id="aclass_device_manager_html_aaebfb2b6f77b010dffd3fc74276c21f1"><div class="ttname"><a href="class_device_manager.html#aaebfb2b6f77b010dffd3fc74276c21f1">DeviceManager::InitDevice</a></div><div class="ttdeci">static void InitDevice()</div><div class="ttdoc">デバイスの初期化</div><div class="ttdef"><b>Definition</b> DeviceManager.cpp:64</div></div>
+<div class="ttc" id="aclass_device_manager_html_ab42287892f9b8847103ac2fd799d5a07"><div class="ttname"><a href="class_device_manager.html#ab42287892f9b8847103ac2fd799d5a07">DeviceManager::GetSwapChain</a></div><div class="ttdeci">static IDXGISwapChain4 * GetSwapChain()</div><div class="ttdoc">スワップチェーンの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:40</div></div>
+<div class="ttc" id="aclass_device_manager_html_ad05a10086d8787232d73b908fe2a50be"><div class="ttname"><a href="class_device_manager.html#ad05a10086d8787232d73b908fe2a50be">DeviceManager::InitWindow</a></div><div class="ttdeci">static void InitWindow()</div><div class="ttdoc">ウィンドウの初期化</div><div class="ttdef"><b>Definition</b> DeviceManager.cpp:18</div></div>
+<div class="ttc" id="aclass_device_manager_html_ad4e9cf5c93730ca21a2ac2d00d77fcec"><div class="ttname"><a href="class_device_manager.html#ad4e9cf5c93730ca21a2ac2d00d77fcec">DeviceManager::GetCMDList</a></div><div class="ttdeci">static ID3D12GraphicsCommandList * GetCMDList()</div><div class="ttdoc">コマンドリストの取得</div><div class="ttdef"><b>Definition</b> DeviceManager.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_8b38f03ef82065e18c0f41c1781fd896.html">BreakBlock</a></li><li class="navelem"><b>DeviceManager.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+\doxysection{Escape\+Manager クラス}
+\hypertarget{class_escape_manager}{}\label{class_escape_manager}\index{EscapeManager@{EscapeManager}}
+
+
+Escape\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_escape_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Escape\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_escape_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_escape_manager_a3208c1cf5d49b3179f3add559a467aa7}\label{class_escape_manager_a3208c1cf5d49b3179f3add559a467aa7} 
+{\bfseries Escape\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_escape_manager_af97af3e07dc40829c5ca8de922d5e7a5}\label{class_escape_manager_af97af3e07dc40829c5ca8de922d5e7a5} 
+virtual {\bfseries ‾\+Escape\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_escape_manager_a890271d427240fd5b76658610054d112}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_object}{Object}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_escape_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_escape_manager_a890271d427240fd5b76658610054d112}\index{EscapeManager@{EscapeManager}!Start@{Start}}
+\index{Start@{Start}!EscapeManager@{EscapeManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_escape_manager_a890271d427240fd5b76658610054d112} 
+void Escape\+Manager\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Object}}を実装しています。
+
+\Hypertarget{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe}\index{EscapeManager@{EscapeManager}!Update@{Update}}
+\index{Update@{Update}!EscapeManager@{EscapeManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe} 
+void Escape\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Escape\+Manager.\+h\item 
+Break\+Block/\+Game/Escape\+Manager.\+cpp\end{DoxyCompactItemize}

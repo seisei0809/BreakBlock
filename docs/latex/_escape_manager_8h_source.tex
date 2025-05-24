@@ -1,0 +1,34 @@
+\doxysection{Escape\+Manager.\+h}
+\hypertarget{_escape_manager_8h_source}{}\label{_escape_manager_8h_source}\index{BreakBlock/Game/EscapeManager.h@{BreakBlock/Game/EscapeManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_escape_manager_a3208c1cf5d49b3179f3add559a467aa7}{EscapeManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object_afe9eeddd7068a37f62d3276a2fb49864}{Object}}\ \{}
+\DoxyCodeLine{00004\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_escape_manager_a3208c1cf5d49b3179f3add559a467aa7}{EscapeManager}}();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_escape_manager_af97af3e07dc40829c5ca8de922d5e7a5}{‾EscapeManager}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_escape_manager_a890271d427240fd5b76658610054d112}{Start}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe}{Update}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ エスケープキーを促す}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_sprite}{Sprite}}*\ escapeClick;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ 画像のパス}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ WSTR\ imagePath\ =\ L\textcolor{stringliteral}{"{}ESCImage.png"{}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ 初期位置}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT3\ initPos\ =\ \{\ 25.0f,25.0f,3.0f\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ サイズ}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ size\ =\ \{\ 20.0f,20.0f\ \};}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+
+\end{DoxyCode}

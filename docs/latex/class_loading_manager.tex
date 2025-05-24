@@ -1,0 +1,89 @@
+\doxysection{Loading\+Manager クラス}
+\hypertarget{class_loading_manager}{}\label{class_loading_manager}\index{LoadingManager@{LoadingManager}}
+
+
+Loading\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_loading_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Loading\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_loading_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loading_manager_a651245cb43cfd0ad9843df3be154b982}\label{class_loading_manager_a651245cb43cfd0ad9843df3be154b982} 
+{\bfseries Loading\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_loading_manager_a77b4ad612d12307cf249ac104efd6dd7}\label{class_loading_manager_a77b4ad612d12307cf249ac104efd6dd7} 
+virtual {\bfseries ‾\+Loading\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_loading_manager_a4bf887d6ea8ed99bbe7dc9f99b0ba0a8}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_loading_manager_aac1483594f296038afe5c1e3784fac0d}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_object}{Object}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_loading_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_loading_manager_a4bf887d6ea8ed99bbe7dc9f99b0ba0a8}\index{LoadingManager@{LoadingManager}!Start@{Start}}
+\index{Start@{Start}!LoadingManager@{LoadingManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_loading_manager_a4bf887d6ea8ed99bbe7dc9f99b0ba0a8} 
+void Loading\+Manager\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Object}}を実装しています。
+
+\Hypertarget{class_loading_manager_aac1483594f296038afe5c1e3784fac0d}\index{LoadingManager@{LoadingManager}!Update@{Update}}
+\index{Update@{Update}!LoadingManager@{LoadingManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_loading_manager_aac1483594f296038afe5c1e3784fac0d} 
+void Loading\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_loading_manager_aac1483594f296038afe5c1e3784fac0d_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Loading\+Manager.\+h\item 
+Break\+Block/\+Game/Loading\+Manager.\+cpp\end{DoxyCompactItemize}

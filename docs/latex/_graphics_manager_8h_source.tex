@@ -1,0 +1,48 @@
+\doxysection{Graphics\+Manager.\+h}
+\hypertarget{_graphics_manager_8h_source}{}\label{_graphics_manager_8h_source}\index{BreakBlock/GraphicsManager.h@{BreakBlock/GraphicsManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AllSetting.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ 画面描画関係}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_graphics_manager}{GraphicsManager}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graphics_manager_a70ae76ea1bb9c7060f7af0288a6dab70}{InitGraphics}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graphics_manager_a4106bf03db7886f2860045407a8a4631}{Render}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graphics_manager_ad20fe5de7eb5afae564ebe47d88873f6}{ReleaseGraphics}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ULONGLONG\ AligmentedSize(ULONGLONG\ size,\ ULONGLONG\ alignment)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (size\ +\ alignment\ -\/\ 1)\ \&\ ‾(alignment\ -\/\ 1);}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ パイプラインステートオブジェクト}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12PipelineState*\ \_pipelinestate;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ ルートシグネチャ}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12RootSignature*\ \_rootsignature;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ 頂点シェーダーバイナリ}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ ID3DBlob*\ \_vsBlob;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ ピクセルシェーダーバイナリ}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ ID3DBlob*\ \_psBlob;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ エラーバイナリ}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ ID3DBlob*\ \_errorBlob;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ ビューポート}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ D3D12\_VIEWPORT\ \_viewport;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ シザー矩形}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ D3D12\_RECT\ \_scissorrect;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+
+\end{DoxyCode}

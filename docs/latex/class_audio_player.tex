@@ -1,0 +1,102 @@
+\doxysection{Audio\+Player クラス}
+\hypertarget{class_audio_player}{}\label{class_audio_player}\index{AudioPlayer@{AudioPlayer}}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_audio_player_a719b7bed7176a26dbab4297879e3b248}{Audio\+Player}} (WSTR)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_audio_player_aa2ba3df2c33f20d8351e52a7f8b883f8}\label{class_audio_player_aa2ba3df2c33f20d8351e52a7f8b883f8} 
+{\bfseries ‾\+Audio\+Player} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_player_a537ef8bde6a3068a1f1722cdcd81464b}{Load\+Wav\+From\+Memory}} (const std\+::vector$<$ UINT8 $>$)
+\begin{DoxyCompactList}\small\item\em メモリからwaveファイルをロードする \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_player_a6692352ffc2b0eb89c58e2ad4892f0d0}{Play}} (bool=false)
+\begin{DoxyCompactList}\small\item\em 再生する \end{DoxyCompactList}\item 
+\Hypertarget{class_audio_player_a6803790d45c497bce503dece10ea847a}\label{class_audio_player_a6803790d45c497bce503dece10ea847a} 
+void {\bfseries Clear\+All} ()
+\begin{DoxyCompactList}\small\item\em 重複して流れてるものや流し済みのものをまとめて綺麗にする \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_audio_player_doc-constructors}
+\doxysubsection{構築子と解体子}
+\Hypertarget{class_audio_player_a719b7bed7176a26dbab4297879e3b248}\index{AudioPlayer@{AudioPlayer}!AudioPlayer@{AudioPlayer}}
+\index{AudioPlayer@{AudioPlayer}!AudioPlayer@{AudioPlayer}}
+\doxysubsubsection{\texorpdfstring{AudioPlayer()}{AudioPlayer()}}
+{\footnotesize\ttfamily \label{class_audio_player_a719b7bed7176a26dbab4297879e3b248} 
+Audio\+Player\+::\+Audio\+Player (\begin{DoxyParamCaption}\item[{WSTR}]{path}{}\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & パス名\\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_player_a719b7bed7176a26dbab4297879e3b248_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_audio_player_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_audio_player_a537ef8bde6a3068a1f1722cdcd81464b}\index{AudioPlayer@{AudioPlayer}!LoadWavFromMemory@{LoadWavFromMemory}}
+\index{LoadWavFromMemory@{LoadWavFromMemory}!AudioPlayer@{AudioPlayer}}
+\doxysubsubsection{\texorpdfstring{LoadWavFromMemory()}{LoadWavFromMemory()}}
+{\footnotesize\ttfamily \label{class_audio_player_a537ef8bde6a3068a1f1722cdcd81464b} 
+void Audio\+Player\+::\+Load\+Wav\+From\+Memory (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ UINT8 $>$}]{data}{}\end{DoxyParamCaption})}
+
+
+
+メモリからwaveファイルをロードする 
+
+
+\begin{DoxyParams}{引数}
+{\em data} & データ\\
+\hline
+\end{DoxyParams}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_player_a537ef8bde6a3068a1f1722cdcd81464b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_audio_player_a6692352ffc2b0eb89c58e2ad4892f0d0}\index{AudioPlayer@{AudioPlayer}!Play@{Play}}
+\index{Play@{Play}!AudioPlayer@{AudioPlayer}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \label{class_audio_player_a6692352ffc2b0eb89c58e2ad4892f0d0} 
+void Audio\+Player\+::\+Play (\begin{DoxyParamCaption}\item[{bool}]{loop}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+再生する 
+
+
+\begin{DoxyParams}{引数}
+{\em loop} & ループするかどうか\\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_audio_player_a6692352ffc2b0eb89c58e2ad4892f0d0_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Audio\+Player.\+h\item 
+Break\+Block/\+Game/Audio\+Player.\+cpp\end{DoxyCompactItemize}

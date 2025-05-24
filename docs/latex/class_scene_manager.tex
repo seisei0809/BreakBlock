@@ -1,0 +1,90 @@
+\doxysection{Scene\+Manager クラス}
+\hypertarget{class_scene_manager}{}\label{class_scene_manager}\index{SceneManager@{SceneManager}}
+\doxysubsubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd}{Change\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em シーンを変更する \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}{Get\+Current\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em 現在のシーンを取得する \end{DoxyCompactList}\item 
+\Hypertarget{class_scene_manager_abc00873bbe254991f744afb9c0df1a95}\label{class_scene_manager_abc00873bbe254991f744afb9c0df1a95} 
+static void {\bfseries Delete\+Scene} ()
+\begin{DoxyCompactList}\small\item\em シーンを破棄する \end{DoxyCompactList}\item 
+static BOOL \& \mbox{\hyperlink{class_scene_manager_a00652ca399f86c56e670828049feb5ac}{Get\+Change\+Now}} ()
+\begin{DoxyCompactList}\small\item\em 現在シーンを変更しようとしているか \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_scene_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd}\index{SceneManager@{SceneManager}!ChangeScene@{ChangeScene}}
+\index{ChangeScene@{ChangeScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{ChangeScene()}{ChangeScene()}}
+{\footnotesize\ttfamily \label{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd} 
+void Scene\+Manager\+::\+Change\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{new\+Scene}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+シーンを変更する 
+
+
+\begin{DoxyParams}{引数}
+{\em new\+Scene} & 新しいシーン\\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_scene_manager_a00652ca399f86c56e670828049feb5ac}\index{SceneManager@{SceneManager}!GetChangeNow@{GetChangeNow}}
+\index{GetChangeNow@{GetChangeNow}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{GetChangeNow()}{GetChangeNow()}}
+{\footnotesize\ttfamily \label{class_scene_manager_a00652ca399f86c56e670828049feb5ac} 
+BOOL \& Scene\+Manager\+::\+Get\+Change\+Now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+現在シーンを変更しようとしているか 
+
+\begin{DoxyReturn}{戻り値}
+しようとしてるならtrue
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a00652ca399f86c56e670828049feb5ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}\index{SceneManager@{SceneManager}!GetCurrentScene@{GetCurrentScene}}
+\index{GetCurrentScene@{GetCurrentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentScene()}{GetCurrentScene()}}
+{\footnotesize\ttfamily \label{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa} 
+\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*} Scene\+Manager\+::\+Get\+Current\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+現在のシーンを取得する 
+
+\begin{DoxyReturn}{戻り値}
+現在のシーン本体
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/Scene\+Manager.\+h\item 
+Break\+Block/Scene\+Manager.\+cpp\end{DoxyCompactItemize}

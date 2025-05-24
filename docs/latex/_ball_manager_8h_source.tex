@@ -1,0 +1,98 @@
+\doxysection{Ball\+Manager.\+h}
+\hypertarget{_ball_manager_8h_source}{}\label{_ball_manager_8h_source}\index{BreakBlock/Game/BallManager.h@{BreakBlock/Game/BallManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}AudioPlayer.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}RainbowColor.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ball_manager_a96a2fb7e1f51a289f46e4cf02419622b}{BallManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object_afe9eeddd7068a37f62d3276a2fb49864}{Object}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_ball_manager_a96a2fb7e1f51a289f46e4cf02419622b}{BallManager}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_ball_manager_a3bb86f9ec86608e588352edd5d8041a8}{‾BallManager}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_manager_a7b7729a7e17daf33912e38c32ab49182}{Start}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653}{Update}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{inline}\ BOOL\ \mbox{\hyperlink{class_ball_manager_a21ad161392f2260338c5805aae5529dd}{GetNowMove}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ isMove;\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00046\ \ \ \ \ BOOL\ IsCollision(\mbox{\hyperlink{struct_transform}{Transform}},\ XMFLOAT2,\ BOOL);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ ボール}}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_sprite}{Sprite}}*\ ball;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ 画像の名前}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{const}\ WSTR\ imageName\ =\ L\textcolor{stringliteral}{"{}BallAndBlock.png"{}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ ボールのサイズ}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ size\ =\ \{\ 20.0f,20.0f\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ 配置するボールの初期位置}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT3\ initPos\ =\ \{\ (FLOAT)(window\_width)\ /\ 2.0f,(FLOAT)(window\_height)-\/130.0f\ ,3.0f\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ 速度}}
+\DoxyCodeLine{00061\ \ \ \ \ XMFLOAT2\ speed;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ 初期の速度}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ initSpeed\ =\ \{\ 600.0f,600.0f\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ 最終的に何倍の速度を足すか}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ addLastSpeed\ =\ 1.5f;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ 回転速度}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ rotSpeed\ =\ 30.0f;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{//\ 0〜1を受け取る}}
+\DoxyCodeLine{00073\ \ \ \ \ FLOAT\ delta;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ 衝突位置をオフセット}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ collisionOffset\ =\ \{\ 25.0f,5.0f\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ 最初のブロックの数}}
+\DoxyCodeLine{00079\ \ \ \ \ UINT64\ initBlockValue;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ 動けるかどうか}}
+\DoxyCodeLine{00082\ \ \ \ \ BOOL\ isMove;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ ゲームクリアしたかどうか}}
+\DoxyCodeLine{00085\ \ \ \ \ BOOL\ isClear;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ 一回でもアウトしたか}}
+\DoxyCodeLine{00088\ \ \ \ \ BOOL\ isOut;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ ゲーム終了時に一回もアウトしないならこの目標値にするため}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{const}\ Transform\ targetTr\ =\ \{\ \{window\_width\ /\ 2.0f,window\_height\ /\ 2.0f\ -\/\ 100.0f,2.0f\},0.0f,\{200.0f,200.0f\}\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ 目標値とどれだけ差があるか}}
+\DoxyCodeLine{00094\ \ \ \ \ Transform\ targetDif;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ クリア時最後のTransform状態}}
+\DoxyCodeLine{00097\ \ \ \ \ Transform\ lastTr;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{//\ 線形的に何秒で目標のTransformまで持っていくか}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ lerpTime\ =\ 1.0f;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{comment}{//\ 経過時間}}
+\DoxyCodeLine{00103\ \ \ \ \ FLOAT\ elapsedTime;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{//\ 消すときの音}}
+\DoxyCodeLine{00106\ \ \ \ \ AudioPlayer*\ breakSE;}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//\ 音のパス}}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{const}\ WSTR\ audioPath\ =\ L\textcolor{stringliteral}{"{}BreakSE.wav"{}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//\ クリア時にレインボーにする}}
+\DoxyCodeLine{00112\ \ \ \ \ RainbowColor*\ rainbow;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{//\ レインボーの速さ}}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ rainbowSpeed\ =\ 20.0f;}
+\DoxyCodeLine{00116\ \};}
+\DoxyCodeLine{00117\ }
+
+\end{DoxyCode}

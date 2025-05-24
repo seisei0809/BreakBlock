@@ -1,0 +1,28 @@
+\doxysection{Asset\+Manager.\+h}
+\hypertarget{_asset_manager_8h_source}{}\label{_asset_manager_8h_source}\index{BreakBlock/AssetManager.h@{BreakBlock/AssetManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AllSetting.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ パックされたデータの情報}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_packed_file}{PackedFile}}\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \ \ \ \ WSTR\ name;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ファイルの名前}}
+\DoxyCodeLine{00008\ \ \ \ \ VECTOR<UINT8>\ data;\ \textcolor{comment}{//\ データそのもの}}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ アセット管理}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_asset_manager}{AssetManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ VECTOR<PackedFile>\ \mbox{\hyperlink{class_asset_manager_a6e241708ae67fe495e2d88e45a5b97e2}{LoadPack}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ パックしたファイルのパス}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ WSTR\ \_packPath;}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+
+\end{DoxyCode}

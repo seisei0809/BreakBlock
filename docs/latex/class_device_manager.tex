@@ -1,0 +1,262 @@
+\doxysection{Device\+Manager クラス}
+\hypertarget{class_device_manager}{}\label{class_device_manager}\index{DeviceManager@{DeviceManager}}
+\doxysubsubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_device_manager_ad05a10086d8787232d73b908fe2a50be}\label{class_device_manager_ad05a10086d8787232d73b908fe2a50be} 
+static void {\bfseries Init\+Window} ()
+\begin{DoxyCompactList}\small\item\em ウィンドウの初期化 \end{DoxyCompactList}\item 
+\Hypertarget{class_device_manager_aaebfb2b6f77b010dffd3fc74276c21f1}\label{class_device_manager_aaebfb2b6f77b010dffd3fc74276c21f1} 
+static void {\bfseries Init\+Device} ()
+\begin{DoxyCompactList}\small\item\em デバイスの初期化 \end{DoxyCompactList}\item 
+\Hypertarget{class_device_manager_a299340d37fcd7a6e03142bf9487de498}\label{class_device_manager_a299340d37fcd7a6e03142bf9487de498} 
+static void {\bfseries Release\+Device} ()
+\begin{DoxyCompactList}\small\item\em デバイスのリリース \end{DoxyCompactList}\item 
+static ID3\+D12\+Device \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_aa9974f20e390aa8d2d811a31883a718d}{Get\+Device}} ()
+\begin{DoxyCompactList}\small\item\em デバイスの取得 \end{DoxyCompactList}\item 
+static IDXGIFactory6 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a769be907ba7fc2438dfd83a6e21015da}{Get\+DXGI}} ()
+\begin{DoxyCompactList}\small\item\em DXGIの取得 \end{DoxyCompactList}\item 
+static IDXGISwap\+Chain4 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_ab42287892f9b8847103ac2fd799d5a07}{Get\+Swap\+Chain}} ()
+\begin{DoxyCompactList}\small\item\em スワップチェーンの取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Command\+Allocator \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a1e528ce7e2ee41252e421ef7858dcfec}{Get\+CMDAllocator}} ()
+\begin{DoxyCompactList}\small\item\em コマンドアロケータの取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Graphics\+Command\+List \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_ad4e9cf5c93730ca21a2ac2d00d77fcec}{Get\+CMDList}} ()
+\begin{DoxyCompactList}\small\item\em コマンドリストの取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Command\+Queue \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a73a9320c803943fcd2f3e4099759bb63}{Get\+CMDQueue}} ()
+\begin{DoxyCompactList}\small\item\em コマンドキューの取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Descriptor\+Heap \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a06e282261faec0fa65953b2d61aac102}{Get\+RTVHeap}} ()
+\begin{DoxyCompactList}\small\item\em RTVヒープ領域の取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Fence \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a64b1cf9204285eef4857fc06ff71b91f}{Get\+Fence}} (INT i)
+\begin{DoxyCompactList}\small\item\em フェンスの取得 \end{DoxyCompactList}\item 
+static UINT64 \& \mbox{\hyperlink{class_device_manager_a739c857e99d2f8e5d99e590f54b3327c}{Get\+Fence\+Val}} (INT i)
+\begin{DoxyCompactList}\small\item\em フェンスの値の取得 \end{DoxyCompactList}\item 
+static ID3\+D12\+Resource \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_device_manager_a9784da1750741a0cd4d6264a59298c64}{Get\+Back\+Buffer}} (INT index)
+\begin{DoxyCompactList}\small\item\em RTV用バックバッファの取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_device_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_device_manager_a9784da1750741a0cd4d6264a59298c64}\index{DeviceManager@{DeviceManager}!GetBackBuffer@{GetBackBuffer}}
+\index{GetBackBuffer@{GetBackBuffer}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetBackBuffer()}{GetBackBuffer()}}
+{\footnotesize\ttfamily \label{class_device_manager_a9784da1750741a0cd4d6264a59298c64} 
+ID3\+D12\+Resource \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+Back\+Buffer (\begin{DoxyParamCaption}\item[{INT}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+RTV用バックバッファの取得 
+
+
+\begin{DoxyParams}{引数}
+{\em index} & インデックス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+RTV用バックバッファ本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a9784da1750741a0cd4d6264a59298c64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_a1e528ce7e2ee41252e421ef7858dcfec}\index{DeviceManager@{DeviceManager}!GetCMDAllocator@{GetCMDAllocator}}
+\index{GetCMDAllocator@{GetCMDAllocator}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetCMDAllocator()}{GetCMDAllocator()}}
+{\footnotesize\ttfamily \label{class_device_manager_a1e528ce7e2ee41252e421ef7858dcfec} 
+ID3\+D12\+Command\+Allocator \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+CMDAllocator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+コマンドアロケータの取得 
+
+\begin{DoxyReturn}{戻り値}
+コマンドアロケータ本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a1e528ce7e2ee41252e421ef7858dcfec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_ad4e9cf5c93730ca21a2ac2d00d77fcec}\index{DeviceManager@{DeviceManager}!GetCMDList@{GetCMDList}}
+\index{GetCMDList@{GetCMDList}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetCMDList()}{GetCMDList()}}
+{\footnotesize\ttfamily \label{class_device_manager_ad4e9cf5c93730ca21a2ac2d00d77fcec} 
+ID3\+D12\+Graphics\+Command\+List \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+CMDList (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+コマンドリストの取得 
+
+\begin{DoxyReturn}{戻り値}
+コマンドリスト本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_ad4e9cf5c93730ca21a2ac2d00d77fcec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_a73a9320c803943fcd2f3e4099759bb63}\index{DeviceManager@{DeviceManager}!GetCMDQueue@{GetCMDQueue}}
+\index{GetCMDQueue@{GetCMDQueue}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetCMDQueue()}{GetCMDQueue()}}
+{\footnotesize\ttfamily \label{class_device_manager_a73a9320c803943fcd2f3e4099759bb63} 
+ID3\+D12\+Command\+Queue \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+CMDQueue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+コマンドキューの取得 
+
+\begin{DoxyReturn}{戻り値}
+コマンドキュー本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a73a9320c803943fcd2f3e4099759bb63_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_aa9974f20e390aa8d2d811a31883a718d}\index{DeviceManager@{DeviceManager}!GetDevice@{GetDevice}}
+\index{GetDevice@{GetDevice}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetDevice()}{GetDevice()}}
+{\footnotesize\ttfamily \label{class_device_manager_aa9974f20e390aa8d2d811a31883a718d} 
+ID3\+D12\+Device \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+Device (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+デバイスの取得 
+
+\begin{DoxyReturn}{戻り値}
+デバイス本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_aa9974f20e390aa8d2d811a31883a718d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_a769be907ba7fc2438dfd83a6e21015da}\index{DeviceManager@{DeviceManager}!GetDXGI@{GetDXGI}}
+\index{GetDXGI@{GetDXGI}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetDXGI()}{GetDXGI()}}
+{\footnotesize\ttfamily \label{class_device_manager_a769be907ba7fc2438dfd83a6e21015da} 
+IDXGIFactory6 \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+DXGI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+DXGIの取得 
+
+\begin{DoxyReturn}{戻り値}
+DXGI本体
+\end{DoxyReturn}
+\Hypertarget{class_device_manager_a64b1cf9204285eef4857fc06ff71b91f}\index{DeviceManager@{DeviceManager}!GetFence@{GetFence}}
+\index{GetFence@{GetFence}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetFence()}{GetFence()}}
+{\footnotesize\ttfamily \label{class_device_manager_a64b1cf9204285eef4857fc06ff71b91f} 
+ID3\+D12\+Fence \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+Fence (\begin{DoxyParamCaption}\item[{INT}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+フェンスの取得 
+
+
+\begin{DoxyParams}{引数}
+{\em i} & インデックス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+フェンス本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a64b1cf9204285eef4857fc06ff71b91f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_a739c857e99d2f8e5d99e590f54b3327c}\index{DeviceManager@{DeviceManager}!GetFenceVal@{GetFenceVal}}
+\index{GetFenceVal@{GetFenceVal}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetFenceVal()}{GetFenceVal()}}
+{\footnotesize\ttfamily \label{class_device_manager_a739c857e99d2f8e5d99e590f54b3327c} 
+UINT64 \& Device\+Manager\+::\+Get\+Fence\+Val (\begin{DoxyParamCaption}\item[{INT}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+フェンスの値の取得 
+
+
+\begin{DoxyParams}{引数}
+{\em i} & インデックス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+フェンスの値本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a739c857e99d2f8e5d99e590f54b3327c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_a06e282261faec0fa65953b2d61aac102}\index{DeviceManager@{DeviceManager}!GetRTVHeap@{GetRTVHeap}}
+\index{GetRTVHeap@{GetRTVHeap}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetRTVHeap()}{GetRTVHeap()}}
+{\footnotesize\ttfamily \label{class_device_manager_a06e282261faec0fa65953b2d61aac102} 
+ID3\+D12\+Descriptor\+Heap \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+RTVHeap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+RTVヒープ領域の取得 
+
+\begin{DoxyReturn}{戻り値}
+RTVヒープ本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_a06e282261faec0fa65953b2d61aac102_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_device_manager_ab42287892f9b8847103ac2fd799d5a07}\index{DeviceManager@{DeviceManager}!GetSwapChain@{GetSwapChain}}
+\index{GetSwapChain@{GetSwapChain}!DeviceManager@{DeviceManager}}
+\doxysubsubsection{\texorpdfstring{GetSwapChain()}{GetSwapChain()}}
+{\footnotesize\ttfamily \label{class_device_manager_ab42287892f9b8847103ac2fd799d5a07} 
+IDXGISwap\+Chain4 \texorpdfstring{$\ast$}{*} Device\+Manager\+::\+Get\+Swap\+Chain (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+スワップチェーンの取得 
+
+\begin{DoxyReturn}{戻り値}
+スワップチェーン本体
+\end{DoxyReturn}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_manager_ab42287892f9b8847103ac2fd799d5a07_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/Device\+Manager.\+h\item 
+Break\+Block/Device\+Manager.\+cpp\end{DoxyCompactItemize}

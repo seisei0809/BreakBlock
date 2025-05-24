@@ -1,0 +1,104 @@
+\doxysection{Ball\+Manager クラス}
+\hypertarget{class_ball_manager}{}\label{class_ball_manager}\index{BallManager@{BallManager}}
+
+
+Ball\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_ball_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Ball\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_ball_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ball_manager_a96a2fb7e1f51a289f46e4cf02419622b}\label{class_ball_manager_a96a2fb7e1f51a289f46e4cf02419622b} 
+{\bfseries Ball\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_ball_manager_a3bb86f9ec86608e588352edd5d8041a8}\label{class_ball_manager_a3bb86f9ec86608e588352edd5d8041a8} 
+virtual {\bfseries ‾\+Ball\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ball_manager_a7b7729a7e17daf33912e38c32ab49182}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_ball_manager_a21ad161392f2260338c5805aae5529dd}{Get\+Now\+Move}} () const
+\begin{DoxyCompactList}\small\item\em 今動いてるか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_object}{Object}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_ball_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_ball_manager_a21ad161392f2260338c5805aae5529dd}\index{BallManager@{BallManager}!GetNowMove@{GetNowMove}}
+\index{GetNowMove@{GetNowMove}!BallManager@{BallManager}}
+\doxysubsubsection{\texorpdfstring{GetNowMove()}{GetNowMove()}}
+{\footnotesize\ttfamily \label{class_ball_manager_a21ad161392f2260338c5805aae5529dd} 
+BOOL Ball\+Manager\+::\+Get\+Now\+Move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+今動いてるか 
+
+\begin{DoxyReturn}{戻り値}
+動いてるならtrue
+\end{DoxyReturn}
+\Hypertarget{class_ball_manager_a7b7729a7e17daf33912e38c32ab49182}\index{BallManager@{BallManager}!Start@{Start}}
+\index{Start@{Start}!BallManager@{BallManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_ball_manager_a7b7729a7e17daf33912e38c32ab49182} 
+void Ball\+Manager\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{scene}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Object}}を実装しています。
+
+\Hypertarget{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653}\index{BallManager@{BallManager}!Update@{Update}}
+\index{Update@{Update}!BallManager@{BallManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653} 
+void Ball\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{scene}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Ball\+Manager.\+h\item 
+Break\+Block/\+Game/Ball\+Manager.\+cpp\end{DoxyCompactItemize}

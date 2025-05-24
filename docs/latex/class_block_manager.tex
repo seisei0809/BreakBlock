@@ -1,0 +1,111 @@
+\doxysection{Block\+Manager クラス}
+\hypertarget{class_block_manager}{}\label{class_block_manager}\index{BlockManager@{BlockManager}}
+
+
+Block\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_block_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Block\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_block_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_block_manager_a93282216d97540def52c1fa4029eb693}\label{class_block_manager_a93282216d97540def52c1fa4029eb693} 
+{\bfseries Block\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_block_manager_a0ef5e8b423ed4ffd788c310c920fa6d7}\label{class_block_manager_a0ef5e8b423ed4ffd788c310c920fa6d7} 
+virtual {\bfseries ‾\+Block\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_manager_a745fb0b594fbc6b171c6bff0d2f7aea3}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_manager_ac331606243413a32c697fcc7e7d669e4}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\item 
+VECTOR$<$ \mbox{\hyperlink{class_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_block_manager_ad399084b5400395c9600a9de2a37afc3}{Get\+Blocks}} ()
+\begin{DoxyCompactList}\small\item\em ブロック配列を取得する \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_block_manager_ae375bf6d13efd470d668d35345de326a}{Get\+All\+No\+Active}} () const
+\begin{DoxyCompactList}\small\item\em 全てが非アクティブになったかどうかを取得する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_object}{Object}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_block_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_block_manager_ae375bf6d13efd470d668d35345de326a}\index{BlockManager@{BlockManager}!GetAllNoActive@{GetAllNoActive}}
+\index{GetAllNoActive@{GetAllNoActive}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{GetAllNoActive()}{GetAllNoActive()}}
+{\footnotesize\ttfamily \label{class_block_manager_ae375bf6d13efd470d668d35345de326a} 
+BOOL Block\+Manager\+::\+Get\+All\+No\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+全てが非アクティブになったかどうかを取得する 
+
+\begin{DoxyReturn}{戻り値}
+全て非アクティブならtrue
+\end{DoxyReturn}
+\Hypertarget{class_block_manager_ad399084b5400395c9600a9de2a37afc3}\index{BlockManager@{BlockManager}!GetBlocks@{GetBlocks}}
+\index{GetBlocks@{GetBlocks}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{GetBlocks()}{GetBlocks()}}
+{\footnotesize\ttfamily \label{class_block_manager_ad399084b5400395c9600a9de2a37afc3} 
+VECTOR$<$ \mbox{\hyperlink{class_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} $>$ Block\+Manager\+::\+Get\+Blocks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ブロック配列を取得する 
+
+\begin{DoxyReturn}{戻り値}
+ブロック本体の配列
+\end{DoxyReturn}
+\Hypertarget{class_block_manager_a745fb0b594fbc6b171c6bff0d2f7aea3}\index{BlockManager@{BlockManager}!Start@{Start}}
+\index{Start@{Start}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_block_manager_a745fb0b594fbc6b171c6bff0d2f7aea3} 
+void Block\+Manager\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Object}}を実装しています。
+
+\Hypertarget{class_block_manager_ac331606243413a32c697fcc7e7d669e4}\index{BlockManager@{BlockManager}!Update@{Update}}
+\index{Update@{Update}!BlockManager@{BlockManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_block_manager_ac331606243413a32c697fcc7e7d669e4} 
+void Block\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Block\+Manager.\+h\item 
+Break\+Block/\+Game/Block\+Manager.\+cpp\end{DoxyCompactItemize}

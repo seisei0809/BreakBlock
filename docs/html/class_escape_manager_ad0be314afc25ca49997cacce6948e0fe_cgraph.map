@@ -1,0 +1,5 @@
+<map id="EscapeManager::Update" name="EscapeManager::Update">
+<area shape="rect" id="Node000001" title="毎フレーム呼び出される関数" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="Node000002" href="$class_game.html#ac25a2e622b6c85e57507638ec4ffaf3f" title="ゲームを終わらせる" alt="" coords="219,5,341,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,16,203,16,203,21,171,21"/>
+</map>

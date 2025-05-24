@@ -1,0 +1,55 @@
+\doxysection{Debugger クラス}
+\hypertarget{class_debugger}{}\label{class_debugger}\index{Debugger@{Debugger}}
+\doxysubsubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_debugger_a7fbc518c03ef27058a94312ba6754698}\label{class_debugger_a7fbc518c03ef27058a94312ba6754698} 
+static void {\bfseries Enable\+Debug\+Layer} ()
+\begin{DoxyCompactList}\small\item\em Direct\+X関係のデバッグ出力をする \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_debugger_a4164fbeb2db5266b1b4b3a014afee469}{Show\+HRESULT}} (HRESULT, const WSTR \&=L"{}\+HRESULT"{})
+\begin{DoxyCompactList}\small\item\em 処理の成功失敗を\+Message\+Boxで出す \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_debugger_a4720238fee0d1357d7dc43877e179b89}{Check\+HR}} (HRESULT, STR)
+\begin{DoxyCompactList}\small\item\em 処理が成功しているかどうか \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_debugger_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_debugger_a4720238fee0d1357d7dc43877e179b89}\index{Debugger@{Debugger}!CheckHR@{CheckHR}}
+\index{CheckHR@{CheckHR}!Debugger@{Debugger}}
+\doxysubsubsection{\texorpdfstring{CheckHR()}{CheckHR()}}
+{\footnotesize\ttfamily \label{class_debugger_a4720238fee0d1357d7dc43877e179b89} 
+void Debugger\+::\+Check\+HR (\begin{DoxyParamCaption}\item[{HRESULT}]{hr}{, }\item[{STR}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+処理が成功しているかどうか 
+
+成功か失敗か見る
+
+失敗した時に出すメッセージを入れる被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_debugger_a4720238fee0d1357d7dc43877e179b89_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_debugger_a4164fbeb2db5266b1b4b3a014afee469}\index{Debugger@{Debugger}!ShowHRESULT@{ShowHRESULT}}
+\index{ShowHRESULT@{ShowHRESULT}!Debugger@{Debugger}}
+\doxysubsubsection{\texorpdfstring{ShowHRESULT()}{ShowHRESULT()}}
+{\footnotesize\ttfamily \label{class_debugger_a4164fbeb2db5266b1b4b3a014afee469} 
+void Debugger\+::\+Show\+HRESULT (\begin{DoxyParamCaption}\item[{HRESULT}]{hr}{, }\item[{const WSTR \&}]{caption}{ = {\ttfamily L"{}HRESULT"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+処理の成功失敗を\+Message\+Boxで出す 
+
+成功か失敗か判断したい\+HRESULT
+
+キャプションにどのように出すか
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/Debugger.\+h\item 
+Break\+Block/Debugger.\+cpp\end{DoxyCompactItemize}

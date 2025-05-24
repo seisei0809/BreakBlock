@@ -1,0 +1,48 @@
+\doxysection{Space\+Key\+Text.\+h}
+\hypertarget{_space_key_text_8h_source}{}\label{_space_key_text_8h_source}\index{BreakBlock/Game/SpaceKeyText.h@{BreakBlock/Game/SpaceKeyText.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}RainbowColor.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_space_key_text_a0e24da5a52a1f3786b124ccea3277405}{SpaceKeyText}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object_afe9eeddd7068a37f62d3276a2fb49864}{Object}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_space_key_text_a0e24da5a52a1f3786b124ccea3277405}{SpaceKeyText}}();}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_space_key_text_af31f11cd8ad59af21dde287c9432c5a4}{‾SpaceKeyText}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_space_key_text_ab3da1a82b58bfe2f33bad5ef435c5675}{Start}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_space_key_text_a9d6c6095460ccc9631211ba650d90132}{Update}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ スペースキーを促す}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_sprite}{Sprite}}*\ spaceClick;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ 画像のパス}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{const}\ WSTR\ imagePath\ =\ L\textcolor{stringliteral}{"{}SpaceClickImage.png"{}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ どっちにフェードしてるか}}
+\DoxyCodeLine{00039\ \ \ \ \ BOOL\ isUpFade;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ フェード速度}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ fadeSpeed\ =\ 5.0f;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ 最初の位置}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT3\ initPos\ =\ \{\ (FLOAT)window\_width\ /\ 2.0f,(FLOAT)window\_height\ /\ 2.0f\ +\ 120.0f,1\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ 大きさ}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ size\ =\ \{\ 200.0f,200.0f\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ レインボー用}}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_rainbow_color}{RainbowColor}}*\ rainbow;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ レインボーの速さ}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ rainbowSpeed\ =\ 20.0f;}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+
+\end{DoxyCode}

@@ -1,0 +1,109 @@
+\doxysection{Game\+Scene クラス}
+\hypertarget{class_game_scene}{}\label{class_game_scene}\index{GameScene@{GameScene}}
+
+
+Game\+Scene の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_game_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Game\+Scene 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_game_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_scene_ac53cc300c8896048c0e21c67e49681b9}\label{class_game_scene_ac53cc300c8896048c0e21c67e49681b9} 
+{\bfseries Game\+Scene} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_game_scene_ae8e43822557301cdb5c1b36b6919280d}\label{class_game_scene_ae8e43822557301cdb5c1b36b6919280d} 
+virtual {\bfseries ‾\+Game\+Scene} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_manager}{Block\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_game_scene_acd36912f95fb46c65b35cb0b9e7fe6a7}{Get\+Block\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em ブロック管理を取得する \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bar_manager}{Bar\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_game_scene_a957cdc5ab7da2fcae8deb1dbea2a4d9d}{Get\+Bar\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em バー管理を取得する \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ball_manager}{Ball\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_game_scene_a0811401666e7e68b34de72c9088a0220}{Get\+Ball\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em ボール管理を取得する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_scene}{Scene}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Scene} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Scene} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void {\bfseries Start} ()
+\begin{DoxyCompactList}\small\item\em Objectの\+Start関数を呼び出す \end{DoxyCompactList}\item 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Objectの\+Update関数を呼び出す \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{その他の継承メンバ}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_scene}{Scene}} に属する継承限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \texorpdfstring{$\ast$}{*} {\bfseries Add\+Object} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_scene}{Scene}} に属する継承限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+VECTOR$<$ \mbox{\hyperlink{class_object}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries objects}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_game_scene_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_game_scene_a0811401666e7e68b34de72c9088a0220}\index{GameScene@{GameScene}!GetBallManager@{GetBallManager}}
+\index{GetBallManager@{GetBallManager}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{GetBallManager()}{GetBallManager()}}
+{\footnotesize\ttfamily \label{class_game_scene_a0811401666e7e68b34de72c9088a0220} 
+\mbox{\hyperlink{class_ball_manager}{Ball\+Manager}} \texorpdfstring{$\ast$}{*} Game\+Scene\+::\+Get\+Ball\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ボール管理を取得する 
+
+\begin{DoxyReturn}{戻り値}
+ボール管理本体
+\end{DoxyReturn}
+\Hypertarget{class_game_scene_a957cdc5ab7da2fcae8deb1dbea2a4d9d}\index{GameScene@{GameScene}!GetBarManager@{GetBarManager}}
+\index{GetBarManager@{GetBarManager}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{GetBarManager()}{GetBarManager()}}
+{\footnotesize\ttfamily \label{class_game_scene_a957cdc5ab7da2fcae8deb1dbea2a4d9d} 
+\mbox{\hyperlink{class_bar_manager}{Bar\+Manager}} \texorpdfstring{$\ast$}{*} Game\+Scene\+::\+Get\+Bar\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+バー管理を取得する 
+
+\begin{DoxyReturn}{戻り値}
+バー管理本体
+\end{DoxyReturn}
+\Hypertarget{class_game_scene_acd36912f95fb46c65b35cb0b9e7fe6a7}\index{GameScene@{GameScene}!GetBlockManager@{GetBlockManager}}
+\index{GetBlockManager@{GetBlockManager}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{GetBlockManager()}{GetBlockManager()}}
+{\footnotesize\ttfamily \label{class_game_scene_acd36912f95fb46c65b35cb0b9e7fe6a7} 
+\mbox{\hyperlink{class_block_manager}{Block\+Manager}} \texorpdfstring{$\ast$}{*} Game\+Scene\+::\+Get\+Block\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ブロック管理を取得する 
+
+\begin{DoxyReturn}{戻り値}
+ブロック管理本体
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Game\+Scene.\+h\item 
+Break\+Block/\+Game/Game\+Scene.\+cpp\end{DoxyCompactItemize}

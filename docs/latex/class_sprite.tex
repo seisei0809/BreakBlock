@@ -1,0 +1,116 @@
+\doxysection{Sprite クラス}
+\hypertarget{class_sprite}{}\label{class_sprite}\index{Sprite@{Sprite}}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_aa206be14329f5664b2b9880426032b13}{Sprite}} (WSTR, ID3\+D12\+Fence \texorpdfstring{$\ast$}{*}=nullptr, UINT64 \&=fence\+Val\+Default)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_sprite_add0ff195ae5d2713d3afdf152f0b9a46}\label{class_sprite_add0ff195ae5d2713d3afdf152f0b9a46} 
+{\bfseries ‾\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \& \mbox{\hyperlink{class_sprite_a172fdd8b0b02f52b77e5718ba0d866d8}{Get\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Transform要素を直に渡す \end{DoxyCompactList}\item 
+XMFLOAT4 \& \mbox{\hyperlink{class_sprite_ac1bb04c8273d83ec24992538438a0b9d}{Get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Color要素を直に渡す \end{DoxyCompactList}\item 
+\Hypertarget{class_sprite_a054a4c340c14c3d218b99e484bf83d21}\label{class_sprite_a054a4c340c14c3d218b99e484bf83d21} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_sprite_ad361ec8a34fe4e50938b395c09ce2489}{Get\+Active}} () const
+\begin{DoxyCompactList}\small\item\em 描画してもいいかのチェック \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_a4a5dc96004cd7301180dc8eb0a60ec8f}{Set\+Active}} (BOOL active)
+\begin{DoxyCompactList}\small\item\em 描画するかどうかの変更 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sprite_a872fe467686e87cb99df39b9c7fe8ad5}\label{class_sprite_a872fe467686e87cb99df39b9c7fe8ad5} 
+static void {\bfseries Cache\+Delete} ()
+\begin{DoxyCompactList}\small\item\em ゲーム終了時にキャッシュ解放用 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_sprite_doc-constructors}
+\doxysubsection{構築子と解体子}
+\Hypertarget{class_sprite_aa206be14329f5664b2b9880426032b13}\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{Sprite()}{Sprite()}}
+{\footnotesize\ttfamily \label{class_sprite_aa206be14329f5664b2b9880426032b13} 
+Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{WSTR}]{path}{, }\item[{ID3\+D12\+Fence \texorpdfstring{$\ast$}{*}}]{fence}{ = {\ttfamily nullptr}, }\item[{UINT64 \&}]{fence\+Val}{ = {\ttfamily fenceValDefault}}\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & パス\\
+\hline
+{\em fence} & 専用のフェンスがあるなら\\
+\hline
+{\em fence\+Val} & 専用のフェンス完了数のエイリアス\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sprite_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_sprite_ad361ec8a34fe4e50938b395c09ce2489}\index{Sprite@{Sprite}!GetActive@{GetActive}}
+\index{GetActive@{GetActive}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{GetActive()}{GetActive()}}
+{\footnotesize\ttfamily \label{class_sprite_ad361ec8a34fe4e50938b395c09ce2489} 
+BOOL Sprite\+::\+Get\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+描画してもいいかのチェック 
+
+\begin{DoxyReturn}{戻り値}
+アクティブならtrue
+\end{DoxyReturn}
+\Hypertarget{class_sprite_ac1bb04c8273d83ec24992538438a0b9d}\index{Sprite@{Sprite}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily \label{class_sprite_ac1bb04c8273d83ec24992538438a0b9d} 
+XMFLOAT4 \& Sprite\+::\+Get\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Color要素を直に渡す 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\Hypertarget{class_sprite_a172fdd8b0b02f52b77e5718ba0d866d8}\index{Sprite@{Sprite}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{GetTransform()}{GetTransform()}}
+{\footnotesize\ttfamily \label{class_sprite_a172fdd8b0b02f52b77e5718ba0d866d8} 
+\mbox{\hyperlink{struct_transform}{Transform}} \& Sprite\+::\+Get\+Transform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transform要素を直に渡す 
+
+\begin{DoxyReturn}{戻り値}
+Transform本体
+\end{DoxyReturn}
+\Hypertarget{class_sprite_a4a5dc96004cd7301180dc8eb0a60ec8f}\index{Sprite@{Sprite}!SetActive@{SetActive}}
+\index{SetActive@{SetActive}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{SetActive()}{SetActive()}}
+{\footnotesize\ttfamily \label{class_sprite_a4a5dc96004cd7301180dc8eb0a60ec8f} 
+void Sprite\+::\+Set\+Active (\begin{DoxyParamCaption}\item[{BOOL}]{active}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+描画するかどうかの変更 
+
+
+\begin{DoxyParams}{引数}
+{\em active} & アクティブ状態\\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/Sprite.\+h\item 
+Break\+Block/Sprite.\+cpp\end{DoxyCompactItemize}

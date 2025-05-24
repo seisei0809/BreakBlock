@@ -1,0 +1,42 @@
+\doxysection{Sprite\+Object\+Manager.\+h}
+\hypertarget{_sprite_object_manager_8h_source}{}\label{_sprite_object_manager_8h_source}\index{BreakBlock/SpriteObjectManager.h@{BreakBlock/SpriteObjectManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AllSetting.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Sprite.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ 頂点情報}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertex}{Vertex}}\ \{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ XMFLOAT3\ position;\ \ \textcolor{comment}{//\ 頂点位置}}
+\DoxyCodeLine{00009\ \ \ \ \ XMFLOAT2\ uv;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ uv座標}}
+\DoxyCodeLine{00010\ \};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ 定数バッファのデータとしてシェーダーに送る構造体}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_constant_buffer_data}{ConstantBufferData}}\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ XMMATRIX\ mat;\ \ \ \textcolor{comment}{//\ 座標変換用行列}}
+\DoxyCodeLine{00016\ \ \ \ \ XMFLOAT4\ color;\ \textcolor{comment}{//\ RGBAの色情報}}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ 全てのSprite管理}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sprite_object_manager}{SpriteObjectManager}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_object_manager_abcead80807a776405e555650103a4984}{AddSprite}}(\mbox{\hyperlink{class_sprite}{Sprite}}*);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_object_manager_af3c777d1b326df162971238d1ec7b4de}{DeleteSprite}}(\mbox{\hyperlink{class_sprite}{Sprite}}*);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_object_manager_ad8f1caaf424a850c1880288ec9946c61}{Draw}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_object_manager_aafe58cbaa8de0467b2187f5909ad3bb4}{AllDeleteSprite}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Sprite保存配列}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ VECTOR<Sprite*>\ \_sprites;}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+
+\end{DoxyCode}

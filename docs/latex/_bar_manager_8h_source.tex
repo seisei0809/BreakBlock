@@ -1,0 +1,37 @@
+\doxysection{Bar\+Manager.\+h}
+\hypertarget{_bar_manager_8h_source}{}\label{_bar_manager_8h_source}\index{BreakBlock/Game/BarManager.h@{BreakBlock/Game/BarManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Object.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bar_manager_a1591f459783ddfe8ae5d4482b07a2259}{BarManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object_afe9eeddd7068a37f62d3276a2fb49864}{Object}}\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_bar_manager_a1591f459783ddfe8ae5d4482b07a2259}{BarManager}}();}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_bar_manager_afbd929d7f3cd46f06cd5acb6538e4faf}{‾BarManager}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bar_manager_adf668c6704e67c04d3a05935714f8621}{Start}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bar_manager_a191f844789a3bbb76d23092d513e08cb}{Update}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_sprite}{Sprite}}*\ \mbox{\hyperlink{class_bar_manager_a8c4330629c0d75f232c651fb4efe351b}{GetBar}}()\ \{\ \textcolor{keywordflow}{return}\ bar;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ バー}}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_sprite}{Sprite}}*\ bar;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ バーのサイズ}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ size\ =\ \{\ 70.0f,30.0f\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ 配置するバーの初期位置}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT3\ initPos\ =\ \{\ (FLOAT)(window\_width)\ /\ 2.0f,(FLOAT)window\_height\ -\/\ 60.0f\ ,1.0f\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ 動くスピード}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ moveSpeed\ =\ 1500;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+
+\end{DoxyCode}

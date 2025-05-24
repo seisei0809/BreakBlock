@@ -1,0 +1,40 @@
+\doxysection{Audio\+Player.\+h}
+\hypertarget{_audio_player_8h_source}{}\label{_audio_player_8h_source}\index{BreakBlock/Game/AudioPlayer.h@{BreakBlock/Game/AudioPlayer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../AllSetting.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ 音再生}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio_player_a719b7bed7176a26dbab4297879e3b248}{AudioPlayer}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_audio_player_a719b7bed7176a26dbab4297879e3b248}{AudioPlayer}}(WSTR);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_audio_player_aa2ba3df2c33f20d8351e52a7f8b883f8}{‾AudioPlayer}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_player_a537ef8bde6a3068a1f1722cdcd81464b}{LoadWavFromMemory}}(\textcolor{keyword}{const}\ std::vector<UINT8>);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_player_a6692352ffc2b0eb89c58e2ad4892f0d0}{Play}}(\textcolor{keywordtype}{bool}\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_player_a6803790d45c497bce503dece10ea847a}{ClearAll}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ XAudionのデバイス(本体)}}
+\DoxyCodeLine{00039\ \ \ \ \ IXAudio2*\ xaudio2;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ マスターボイス(スピーカーとつながる最終地点)}}
+\DoxyCodeLine{00042\ \ \ \ \ IXAudio2MasteringVoice*\ masterVoice;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ 再生のために必要な音データ}}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<UINT8>\ audioData;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ waveファイルのフォーマット}}
+\DoxyCodeLine{00048\ \ \ \ \ WAVEFORMATEX\ waveFormat;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ 音バッファの管理配列}}
+\DoxyCodeLine{00051\ \ \ \ \ std::vector<IXAudio2SourceVoice*>\ activeVoices;}
+\DoxyCodeLine{00052\ \};}
+
+\end{DoxyCode}

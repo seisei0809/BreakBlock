@@ -1,0 +1,15 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="Node000000" href="$class_object.html" title=" " alt="" coords="5,132,65,159"/>
+<area shape="rect" id="Node000001" href="$class_ball_manager.html" title=" " alt="" coords="124,5,218,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="49,117,75,79,111,42,130,30,133,35,114,46,80,82,54,120"/>
+<area shape="rect" id="Node000002" href="$class_bar_manager.html" title=" " alt="" coords="125,56,216,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="66,121,111,92,135,81,137,86,114,97,69,125"/>
+<area shape="rect" id="Node000003" href="$class_block_manager.html" title=" " alt="" coords="119,107,223,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="79,134,118,127,119,132,80,140"/>
+<area shape="rect" id="Node000004" href="$class_escape_manager.html" title=" " alt="" coords="113,157,228,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="81,151,113,157,112,162,80,156"/>
+<area shape="rect" id="Node000005" href="$class_loading_manager.html" title=" " alt="" coords="113,208,229,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="69,166,114,194,137,205,135,210,111,198,66,170"/>
+<area shape="rect" id="Node000006" href="$class_space_key_text.html" title=" " alt="" coords="118,259,224,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="54,171,80,209,114,245,133,256,130,260,111,249,75,212,49,174"/>
+</map>

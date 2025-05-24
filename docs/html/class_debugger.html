@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BreakBlock: Debugger クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BreakBlock
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_debugger.html','','class_debugger-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Debugger クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7fbc518c03ef27058a94312ba6754698" id="r_a7fbc518c03ef27058a94312ba6754698"><td class="memItemLeft" align="right" valign="top"><a id="a7fbc518c03ef27058a94312ba6754698" name="a7fbc518c03ef27058a94312ba6754698"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableDebugLayer</b> ()</td></tr>
+<tr class="memdesc:a7fbc518c03ef27058a94312ba6754698"><td class="mdescLeft">&#160;</td><td class="mdescRight">DirectX関係のデバッグ出力をする <br /></td></tr>
+<tr class="memitem:a4164fbeb2db5266b1b4b3a014afee469" id="r_a4164fbeb2db5266b1b4b3a014afee469"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4164fbeb2db5266b1b4b3a014afee469">ShowHRESULT</a> (HRESULT, const WSTR &amp;=L&quot;HRESULT&quot;)</td></tr>
+<tr class="memdesc:a4164fbeb2db5266b1b4b3a014afee469"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理の成功失敗をMessageBoxで出す  <br /></td></tr>
+<tr class="memitem:a4720238fee0d1357d7dc43877e179b89" id="r_a4720238fee0d1357d7dc43877e179b89"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4720238fee0d1357d7dc43877e179b89">CheckHR</a> (HRESULT, STR)</td></tr>
+<tr class="memdesc:a4720238fee0d1357d7dc43877e179b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理が成功しているかどうか  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a4720238fee0d1357d7dc43877e179b89" name="a4720238fee0d1357d7dc43877e179b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4720238fee0d1357d7dc43877e179b89">&#9670;&#160;</a></span>CheckHR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Debugger::CheckHR </td>
+          <td>(</td>
+          <td class="paramtype">HRESULT</td>          <td class="paramname"><span class="paramname"><em>hr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">STR</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理が成功しているかどうか </p>
+<p>成功か失敗か見る</p>
+<p>失敗した時に出すメッセージを入れる</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_debugger_a4720238fee0d1357d7dc43877e179b89_icgraph.png" border="0" usemap="#aclass_debugger_a4720238fee0d1357d7dc43877e179b89_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_debugger_a4720238fee0d1357d7dc43877e179b89_icgraph" id="aclass_debugger_a4720238fee0d1357d7dc43877e179b89_icgraph">
+<area shape="rect" title="処理が成功しているかどうか" alt="" coords="273,157,416,184"/>
+<area shape="rect" href="class_audio_player.html#a719b7bed7176a26dbab4297879e3b248" title="コンストラクタ" alt="" coords="30,5,200,32"/>
+<area shape="poly" title=" " alt="" coords="324,146,282,94,254,68,223,46,198,35,200,30,226,42,258,64,286,91,328,143"/>
+<area shape="rect" href="class_sprite.html#a054a4c340c14c3d218b99e484bf83d21" title="描画" alt="" coords="68,56,162,83"/>
+<area shape="poly" title=" " alt="" coords="313,150,272,122,224,97,162,79,164,74,226,92,274,118,315,146"/>
+<area shape="rect" href="class_device_manager.html#aaebfb2b6f77b010dffd3fc74276c21f1" title="デバイスの初期化" alt="" coords="25,107,205,133"/>
+<area shape="poly" title=" " alt="" coords="265,156,178,137,179,131,266,151"/>
+<area shape="rect" href="class_graphics_manager.html#a70ae76ea1bb9c7060f7af0288a6dab70" title="グラフィックスパイプラインの初期化" alt="" coords="14,157,216,184"/>
+<area shape="poly" title=" " alt="" coords="258,173,216,173,216,168,258,168"/>
+<area shape="rect" href="class_loading_manager.html#a651245cb43cfd0ad9843df3be154b982" title="コンストラクタ" alt="" coords="5,208,225,235"/>
+<area shape="poly" title=" " alt="" coords="266,191,179,210,178,205,265,185"/>
+<area shape="rect" href="class_audio_player.html#a6692352ffc2b0eb89c58e2ad4892f0d0" title="再生する" alt="" coords="52,259,178,285"/>
+<area shape="poly" title=" " alt="" coords="315,196,274,223,226,249,179,264,177,259,224,244,272,219,313,191"/>
+<area shape="rect" href="class_graphics_manager.html#a4106bf03db7886f2860045407a8a4631" title="描画" alt="" coords="28,309,202,336"/>
+<area shape="poly" title=" " alt="" coords="328,199,286,250,258,277,226,300,200,311,198,306,223,295,254,273,282,247,324,195"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4164fbeb2db5266b1b4b3a014afee469" name="a4164fbeb2db5266b1b4b3a014afee469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4164fbeb2db5266b1b4b3a014afee469">&#9670;&#160;</a></span>ShowHRESULT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Debugger::ShowHRESULT </td>
+          <td>(</td>
+          <td class="paramtype">HRESULT</td>          <td class="paramname"><span class="paramname"><em>hr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WSTR &amp;</td>          <td class="paramname"><span class="paramname"><em>caption</em></span><span class="paramdefsep"> = </span><span class="paramdefval">L&quot;HRESULT&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理の成功失敗をMessageBoxで出す </p>
+<p>成功か失敗か判断したいHRESULT</p>
+<p>キャプションにどのように出すか</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>BreakBlock/<a class="el" href="_debugger_8h_source.html">Debugger.h</a></li>
+<li>BreakBlock/<b>Debugger.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_debugger.html">Debugger</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+\doxysection{Sprite.\+h}
+\hypertarget{_sprite_8h_source}{}\label{_sprite_8h_source}\index{BreakBlock/Sprite.h@{BreakBlock/Sprite.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AllSetting.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ 定数バッファに渡すデータ}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_const_buffer_data}{ConstBufferData}}\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \ \ \ \ XMMATRIX\ mat;\ \ \ \textcolor{comment}{//\ 行列4x4}}
+\DoxyCodeLine{00008\ \ \ \ \ XMFLOAT4\ color;\ \textcolor{comment}{//\ RGBAの色情報}}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ 位置回転スケーリングを持つ}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_transform}{Transform}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ 位置座標}}
+\DoxyCodeLine{00015\ \ \ \ \ XMFLOAT3\ position;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ 回転座標}}
+\DoxyCodeLine{00018\ \ \ \ \ FLOAT\ rotation;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ スケーリング座標}}
+\DoxyCodeLine{00021\ \ \ \ \ XMFLOAT2\ scale;}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ Sprite本体}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sprite_aa206be14329f5664b2b9880426032b13}{Sprite}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_sprite_aa206be14329f5664b2b9880426032b13}{Sprite}}(WSTR,\ ID3D12Fence*\ =\ \textcolor{keyword}{nullptr},\ UINT64\ \&\ =\ fenceValDefault);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_sprite_add0ff195ae5d2713d3afdf152f0b9a46}{‾Sprite}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_a872fe467686e87cb99df39b9c7fe8ad5}{CacheDelete}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_transform}{Transform}}\&\ \mbox{\hyperlink{class_sprite_a172fdd8b0b02f52b77e5718ba0d866d8}{GetTransform}}()\ \{\ \textcolor{keywordflow}{return}\ transform;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ XMFLOAT4\&\ \mbox{\hyperlink{class_sprite_ac1bb04c8273d83ec24992538438a0b9d}{GetColor}}()\ \{\ \textcolor{keywordflow}{return}\ color;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_a054a4c340c14c3d218b99e484bf83d21}{Draw}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{inline}\ BOOL\ \mbox{\hyperlink{class_sprite_ad361ec8a34fe4e50938b395c09ce2489}{GetActive}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ isActive;\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_a4a5dc96004cd7301180dc8eb0a60ec8f}{SetActive}}(BOOL\ active)\ \{\ isActive\ =\ active;\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ アライメントの計算に必要}}
+\DoxyCodeLine{00079\ \ \ \ \ ULONGLONG\ AligmentedSize(ULONGLONG\ size,\ ULONGLONG\ alignment);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ 位置回転スケーリングを持ったTransform}}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{struct_transform}{Transform}}\ transform;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ 頂点バッファビュー}}
+\DoxyCodeLine{00085\ \ \ \ \ D3D12\_VERTEX\_BUFFER\_VIEW\ vbView;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ インデックスバッファビュー}}
+\DoxyCodeLine{00088\ \ \ \ \ D3D12\_INDEX\_BUFFER\_VIEW\ ibView;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ 頂点バッファ}}
+\DoxyCodeLine{00091\ \ \ \ \ ID3D12Resource*\ vertBuff;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ 頂点バッファアップロード用}}
+\DoxyCodeLine{00094\ \ \ \ \ ID3D12Resource*\ uploadBuff;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ インデックスバッファ}}
+\DoxyCodeLine{00097\ \ \ \ \ ID3D12Resource*\ idxBuff;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{//\ テクスチャバッファ}}
+\DoxyCodeLine{00100\ \ \ \ \ ID3D12Resource*\ texBuff;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{comment}{//\ 定数バッファ}}
+\DoxyCodeLine{00103\ \ \ \ \ ID3D12Resource*\ constBuff;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{//\ SRVとCBVを指すディスクリプタヒープ}}
+\DoxyCodeLine{00106\ \ \ \ \ ID3D12DescriptorHeap*\ descriHeap;}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//\ アップロード用アロケータ}}
+\DoxyCodeLine{00109\ \ \ \ \ ID3D12CommandAllocator*\ uploadAllocator;}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//\ アップロード用コマンドリスト}}
+\DoxyCodeLine{00112\ \ \ \ \ ID3D12GraphicsCommandList*\ uploadCmdList;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{//\ アップロード用コマンドキュー}}
+\DoxyCodeLine{00115\ \ \ \ \ ID3D12CommandQueue*\ uploadCmdQueue;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{comment}{//\ 専用フェンス}}
+\DoxyCodeLine{00118\ \ \ \ \ ID3D12Fence*\ fence;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{comment}{//\ 専用のフェンスの完了数}}
+\DoxyCodeLine{00121\ \ \ \ \ UINT64\&\ fenceVal;}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{comment}{//\ デフォルト引数用}}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{static}\ UINT64\ fenceValDefault;}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{comment}{//\ 色情報}}
+\DoxyCodeLine{00127\ \ \ \ \ XMFLOAT4\ color;}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//\ 描画してもいいか}}
+\DoxyCodeLine{00130\ \ \ \ \ BOOL\ isActive;}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{comment}{//\ 画像の名前}}
+\DoxyCodeLine{00133\ \ \ \ \ WSTR\ imageName;}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{comment}{//\ 重複防止のためのテクスチャキャッシュ}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keyword}{static}\ std::map<std::wstring,\ ID3D12Resource*>\ texBuffCache;}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{comment}{//\ 重複防止のためのメタデータキャッシュ}}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keyword}{static}\ std::map<std::wstring,\ TexMetadata>\ metadataCache;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{comment}{//\ 重複防止のための画像本体キャッシュ}}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{static}\ std::map<std::wstring,\ ScratchImage>\ scratchImgCache;}
+\DoxyCodeLine{00143\ \};}
+\DoxyCodeLine{00144\ }
+
+\end{DoxyCode}

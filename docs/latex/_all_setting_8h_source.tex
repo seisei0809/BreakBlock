@@ -1,0 +1,51 @@
+\doxysection{All\+Setting.\+h}
+\hypertarget{_all_setting_8h_source}{}\label{_all_setting_8h_source}\index{BreakBlock/AllSetting.h@{BreakBlock/AllSetting.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NOMINMAX}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <Windows.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <debugapi.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <dxgidebug.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <d3d12.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <dxgi1\_6.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <DirectXMath.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <d3dcompiler.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <DirectXTex.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <d3dx12.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <xaudio2.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}resource.h"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{using\ namespace\ }DirectX;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00024\ \textcolor{keyword}{using\ }VECTOR\ =\ std::vector<T>;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{using\ }WSTR\ =\ std::wstring;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }STR\ =\ std::string;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ ポインタが有効ならReleaseを呼び出し、nullptrに設定}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ SAFE\_RELEASE(p)\ if(p)\{\ p-\/>Release();p\ =\ nullptr;\}}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ ポインタが有効ならdeleteを呼び出し、nullptrに設定}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ SAFE\_DELETE(p)\ if\ (p)\ \{delete\ p;p\ =\ nullptr;\}}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ ポインタが有効なら所有権の移動(p1-\/>p2)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ SAFE\_MOVE(p1,p2)if\ (p1)\ \{if(p2)\{p2-\/>Release();\}p2=p1;p1-\/>AddRef();p1-\/>Release();p1\ =\ nullptr;\}}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{extern}\ HRESULT\ g\_hr;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 処理が成功か失敗か見る}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{extern}\ LONG\ window\_width;\ \ \ \ \ \ \ \textcolor{comment}{//\ ウィンドウの幅}}
+\DoxyCodeLine{00037\ \textcolor{keyword}{extern}\ LONG\ window\_height;\ \ \ \ \ \ \textcolor{comment}{//\ ウィンドウの高さ}}
+\DoxyCodeLine{00038\ \textcolor{keyword}{extern}\ LPCWSTR\ g\_appName;\ \ \ \ \ \ \ \textcolor{comment}{//\ ゲームの名前}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{extern}\ HWND\ g\_hwnd;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ゲームを描画するウィンドウのハンドル}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{extern}\ FLOAT\ fps;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 固定FPS}}
+\DoxyCodeLine{00041\ \textcolor{keyword}{extern}\ FLOAT\ frameDurationS;\ \ \ \ \textcolor{comment}{//\ 1フレームの時間(s)}}
+\DoxyCodeLine{00042\ \textcolor{keyword}{extern}\ FLOAT\ backColor[4];\ \ \ \ \ \ \textcolor{comment}{//\ 背景色}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{comment}{//\ ウィンドウプロシージャ}}
+\DoxyCodeLine{00045\ LRESULT\ WinProc(HWND\ hwnd,\ UINT\ msg,\ WPARAM\ wparam,\ LPARAM\ lparam);}
+
+\end{DoxyCode}

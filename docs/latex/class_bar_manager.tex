@@ -1,0 +1,96 @@
+\doxysection{Bar\+Manager クラス}
+\hypertarget{class_bar_manager}{}\label{class_bar_manager}\index{BarManager@{BarManager}}
+
+
+Bar\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_bar_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Bar\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_bar_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bar_manager_a1591f459783ddfe8ae5d4482b07a2259}\label{class_bar_manager_a1591f459783ddfe8ae5d4482b07a2259} 
+{\bfseries Bar\+Manager} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_bar_manager_afbd929d7f3cd46f06cd5acb6538e4faf}\label{class_bar_manager_afbd929d7f3cd46f06cd5acb6538e4faf} 
+virtual {\bfseries ‾\+Bar\+Manager} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bar_manager_adf668c6704e67c04d3a05935714f8621}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bar_manager_a191f844789a3bbb76d23092d513e08cb}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bar_manager_a8c4330629c0d75f232c651fb4efe351b}{Get\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em バーを取得する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{基底クラス \mbox{\hyperlink{class_object}{Object}} に属する継承公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_bar_manager_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_bar_manager_a8c4330629c0d75f232c651fb4efe351b}\index{BarManager@{BarManager}!GetBar@{GetBar}}
+\index{GetBar@{GetBar}!BarManager@{BarManager}}
+\doxysubsubsection{\texorpdfstring{GetBar()}{GetBar()}}
+{\footnotesize\ttfamily \label{class_bar_manager_a8c4330629c0d75f232c651fb4efe351b} 
+\mbox{\hyperlink{class_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} Bar\+Manager\+::\+Get\+Bar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+バーを取得する 
+
+\begin{DoxyReturn}{戻り値}
+バーの本体
+\end{DoxyReturn}
+\Hypertarget{class_bar_manager_adf668c6704e67c04d3a05935714f8621}\index{BarManager@{BarManager}!Start@{Start}}
+\index{Start@{Start}!BarManager@{BarManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_bar_manager_adf668c6704e67c04d3a05935714f8621} 
+void Bar\+Manager\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Object}}を実装しています。
+
+\Hypertarget{class_bar_manager_a191f844789a3bbb76d23092d513e08cb}\index{BarManager@{BarManager}!Update@{Update}}
+\index{Update@{Update}!BarManager@{BarManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_bar_manager_a191f844789a3bbb76d23092d513e08cb} 
+void Bar\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/\+Game/Bar\+Manager.\+h\item 
+Break\+Block/\+Game/Bar\+Manager.\+cpp\end{DoxyCompactItemize}

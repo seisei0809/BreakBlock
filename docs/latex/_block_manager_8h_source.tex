@@ -1,0 +1,56 @@
+\doxysection{Block\+Manager.\+h}
+\hypertarget{_block_manager_8h_source}{}\label{_block_manager_8h_source}\index{BreakBlock/Game/BlockManager.h@{BreakBlock/Game/BlockManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}RainbowColor.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ ブロック管理}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_block_manager_a93282216d97540def52c1fa4029eb693}{BlockManager}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object_afe9eeddd7068a37f62d3276a2fb49864}{Object}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_block_manager_a93282216d97540def52c1fa4029eb693}{BlockManager}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_block_manager_a0ef5e8b423ed4ffd788c310c920fa6d7}{‾BlockManager}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_manager_a745fb0b594fbc6b171c6bff0d2f7aea3}{Start}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_manager_ac331606243413a32c697fcc7e7d669e4}{Update}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{inline}\ VECTOR<Sprite*>\ \mbox{\hyperlink{class_block_manager_ad399084b5400395c9600a9de2a37afc3}{GetBlocks}}()\ \{\ \textcolor{keywordflow}{return}\ blocks;\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ BOOL\ \mbox{\hyperlink{class_block_manager_ae375bf6d13efd470d668d35345de326a}{GetAllNoActive}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ isAllNoActive;\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ 配置するブロックの配列}}
+\DoxyCodeLine{00046\ \ \ \ \ VECTOR<Sprite*>\ blocks;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ 画像の名前}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{const}\ WSTR\ imageName\ =\ L\textcolor{stringliteral}{"{}BallAndBlock.png"{}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ ブロックのサイズ}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ size\ =\ \{\ 60.0f,10.0f\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ 配置するブロックの初期位置}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT3\ initPos\ =\ \{\ 120.0f,20.0f,1.0f\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ 配置する間隔}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ XMFLOAT2\ space\ =\ \{\ 140.0f,30.0f\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ 行と列何個置くか}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{const}\ XMINT2\ setMat\ =\ \{\ 5,10\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ ブロックをレインボー変化させる}}
+\DoxyCodeLine{00064\ \ \ \ \ RainbowColor*\ rainbow;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ レインボー変化の速度}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{const}\ FLOAT\ rainbowSpeed\ =\ 10.0f;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ 全てが非アクティブになったかどうか}}
+\DoxyCodeLine{00070\ \ \ \ \ BOOL\ isAllNoActive;}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+
+\end{DoxyCode}

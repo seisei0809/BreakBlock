@@ -1,0 +1,73 @@
+\doxysection{Device\+Manager.\+h}
+\hypertarget{_device_manager_8h_source}{}\label{_device_manager_8h_source}\index{BreakBlock/DeviceManager.h@{BreakBlock/DeviceManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}AllSetting.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ ここでDevice関係を管理}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_device_manager}{DeviceManager}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_device_manager_ad05a10086d8787232d73b908fe2a50be}{InitWindow}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_device_manager_aaebfb2b6f77b010dffd3fc74276c21f1}{InitDevice}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_device_manager_a299340d37fcd7a6e03142bf9487de498}{ReleaseDevice}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12Device*\ \mbox{\hyperlink{class_device_manager_aa9974f20e390aa8d2d811a31883a718d}{GetDevice}}()\ \{\ \textcolor{keywordflow}{return}\ \_dev;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ IDXGIFactory6*\ \mbox{\hyperlink{class_device_manager_a769be907ba7fc2438dfd83a6e21015da}{GetDXGI}}()\ \{\ \textcolor{keywordflow}{return}\ \_dxgiFactory;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ IDXGISwapChain4*\ \mbox{\hyperlink{class_device_manager_ab42287892f9b8847103ac2fd799d5a07}{GetSwapChain}}()\ \{\ \textcolor{keywordflow}{return}\ \_swapchain;\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12CommandAllocator*\ \mbox{\hyperlink{class_device_manager_a1e528ce7e2ee41252e421ef7858dcfec}{GetCMDAllocator}}()\ \{\ \textcolor{keywordflow}{return}\ \_cmdAllocator;\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12GraphicsCommandList*\ \mbox{\hyperlink{class_device_manager_ad4e9cf5c93730ca21a2ac2d00d77fcec}{GetCMDList}}()\ \{\ \textcolor{keywordflow}{return}\ \_cmdList;\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12CommandQueue*\ \mbox{\hyperlink{class_device_manager_a73a9320c803943fcd2f3e4099759bb63}{GetCMDQueue}}()\ \{\ \textcolor{keywordflow}{return}\ \_cmdQueue;\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12DescriptorHeap*\ \mbox{\hyperlink{class_device_manager_a06e282261faec0fa65953b2d61aac102}{GetRTVHeap}}()\ \{\ \textcolor{keywordflow}{return}\ \_rtvHeap;\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12Fence*\ \mbox{\hyperlink{class_device_manager_a64b1cf9204285eef4857fc06ff71b91f}{GetFence}}(INT\ i)\ \{\ \textcolor{keywordflow}{return}\ \_fences[i];\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ UINT64\&\ \mbox{\hyperlink{class_device_manager_a739c857e99d2f8e5d99e590f54b3327c}{GetFenceVal}}(INT\ i)\ \{\ \textcolor{keywordflow}{return}\ \_fenceVals[i];\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ ID3D12Resource*\ \mbox{\hyperlink{class_device_manager_a9784da1750741a0cd4d6264a59298c64}{GetBackBuffer}}(INT\ index)\ \{\ \textcolor{keywordflow}{return}\ \_backBuffers[index];\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//\ Direct3Dのデバイス格納用}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12Device*\ \_dev;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//\ DXGI格納用}}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{static}\ IDXGIFactory6*\ \_dxgiFactory;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ スワップチェーン操作用}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{static}\ IDXGISwapChain4*\ \_swapchain;}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//\ コマンドアロケータ格納用}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12CommandAllocator*\ \_cmdAllocator;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ コマンドリスト操作用}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12GraphicsCommandList*\ \_cmdList;}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{comment}{//\ コマンドキュー操作用}}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12CommandQueue*\ \_cmdQueue;}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{comment}{//\ RTVのヒープ領域格納用}}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{static}\ ID3D12DescriptorHeap*\ \_rtvHeap;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{comment}{//\ 完了処理数格納用\ \ }}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keyword}{static}\ VECTOR<UINT64>\ \_fenceVals;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{comment}{//\ フェンス立てる用}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{static}\ VECTOR<ID3D12Fence*>\ \_fences;}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{comment}{//\ RTV用バックバッファ格納用}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{static}\ VECTOR<ID3D12Resource*>\ \_backBuffers;}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+
+\end{DoxyCode}

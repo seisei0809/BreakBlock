@@ -1,0 +1,63 @@
+\doxysection{Object クラス}
+\hypertarget{class_object}{}\label{class_object}\index{Object@{Object}}
+
+
+Object の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_object_afe9eeddd7068a37f62d3276a2fb49864}\label{class_object_afe9eeddd7068a37f62d3276a2fb49864} 
+{\bfseries Object} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\Hypertarget{class_object_af5d5a67728cc36b054b28fe13e339705}\label{class_object_af5d5a67728cc36b054b28fe13e339705} 
+virtual {\bfseries ‾\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_object_a07a7e674bd3987d8fb1ae2f244993c28}{Start}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})=0
+\begin{DoxyCompactList}\small\item\em 最初に呼び出される関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_object_a57b2631752598e892a49c6c41cf19373}{Update}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*})=0
+\begin{DoxyCompactList}\small\item\em 毎フレーム呼び出される関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_object_doc-func-members}
+\doxysubsection{関数詳解}
+\Hypertarget{class_object_a07a7e674bd3987d8fb1ae2f244993c28}\index{Object@{Object}!Start@{Start}}
+\index{Start@{Start}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_object_a07a7e674bd3987d8fb1ae2f244993c28} 
+virtual void Object\+::\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+最初に呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_ball_manager_a7b7729a7e17daf33912e38c32ab49182}{Ball\+Manager}}, \mbox{\hyperlink{class_bar_manager_adf668c6704e67c04d3a05935714f8621}{Bar\+Manager}}, \mbox{\hyperlink{class_block_manager_a745fb0b594fbc6b171c6bff0d2f7aea3}{Block\+Manager}}, \mbox{\hyperlink{class_escape_manager_a890271d427240fd5b76658610054d112}{Escape\+Manager}}, \mbox{\hyperlink{class_loading_manager_a4bf887d6ea8ed99bbe7dc9f99b0ba0a8}{Loading\+Manager}}, \mbox{\hyperlink{class_space_key_text_ab3da1a82b58bfe2f33bad5ef435c5675}{Space\+Key\+Text}}で実装されています。
+
+\Hypertarget{class_object_a57b2631752598e892a49c6c41cf19373}\index{Object@{Object}!Update@{Update}}
+\index{Update@{Update}!Object@{Object}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_object_a57b2631752598e892a49c6c41cf19373} 
+virtual void Object\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+毎フレーム呼び出される関数 
+
+シーン本体
+
+\mbox{\hyperlink{class_ball_manager_a601ccaf4aae87a27964eae048f0ba653}{Ball\+Manager}}, \mbox{\hyperlink{class_bar_manager_a191f844789a3bbb76d23092d513e08cb}{Bar\+Manager}}, \mbox{\hyperlink{class_block_manager_ac331606243413a32c697fcc7e7d669e4}{Block\+Manager}}, \mbox{\hyperlink{class_escape_manager_ad0be314afc25ca49997cacce6948e0fe}{Escape\+Manager}}, \mbox{\hyperlink{class_loading_manager_aac1483594f296038afe5c1e3784fac0d}{Loading\+Manager}}, \mbox{\hyperlink{class_space_key_text_a9d6c6095460ccc9631211ba650d90132}{Space\+Key\+Text}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Break\+Block/Object.\+h\end{DoxyCompactItemize}

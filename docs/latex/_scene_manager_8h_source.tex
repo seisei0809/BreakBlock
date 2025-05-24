@@ -1,0 +1,29 @@
+\doxysection{Scene\+Manager.\+h}
+\hypertarget{_scene_manager_8h_source}{}\label{_scene_manager_8h_source}\index{BreakBlock/SceneManager.h@{BreakBlock/SceneManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Scene.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ シーン管理}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_scene_manager}{SceneManager}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scene_manager_a8aef1adb47086c26f201f745ac9e18bd}{ChangeScene}}(\mbox{\hyperlink{class_scene}{Scene}}*);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_scene}{Scene}}*\ \mbox{\hyperlink{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}{GetCurrentScene}}()\ \{\ \textcolor{keywordflow}{return}\ \_currentScene;\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scene_manager_abc00873bbe254991f744afb9c0df1a95}{DeleteScene}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ BOOL\&\ \mbox{\hyperlink{class_scene_manager_a00652ca399f86c56e670828049feb5ac}{GetChangeNow}}()\ \{\ \textcolor{keywordflow}{return}\ \_isChangeNow;\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ 現在のシーン}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_scene}{Scene}}*\ \_currentScene;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ 現在シーンを変更しようとしているか}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ BOOL\ \_isChangeNow;}
+\DoxyCodeLine{00038\ \};}
+
+\end{DoxyCode}

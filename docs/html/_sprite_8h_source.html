@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BreakBlock: BreakBlock/Sprite.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">BreakBlock
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sprite_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Sprite.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;AllSetting.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// 定数バッファに渡すデータ</span></div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_const_buffer_data.html">    5</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_const_buffer_data.html">ConstBufferData</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    XMMATRIX mat;   <span class="comment">// 行列4x4</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    XMFLOAT4 color; <span class="comment">// RGBAの色情報</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// 位置回転スケーリングを持つ</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_transform.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_transform.html">Transform</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// 位置座標</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    XMFLOAT3 position;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// 回転座標</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    FLOAT rotation;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// スケーリング座標</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    XMFLOAT2 scale;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Sprite本体</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_sprite.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="class_sprite.html#aa206be14329f5664b2b9880426032b13">Sprite</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="class_sprite.html#aa206be14329f5664b2b9880426032b13">Sprite</a>(WSTR, ID3D12Fence* = <span class="keyword">nullptr</span>, UINT64 &amp; = fenceValDefault);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_sprite.html#add0ff195ae5d2713d3afdf152f0b9a46">‾Sprite</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a872fe467686e87cb99df39b9c7fe8ad5">CacheDelete</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_sprite.html#a172fdd8b0b02f52b77e5718ba0d866d8">   51</a></span>    <span class="keyword">inline</span> <a class="code hl_struct" href="struct_transform.html">Transform</a>&amp; <a class="code hl_function" href="class_sprite.html#a172fdd8b0b02f52b77e5718ba0d866d8">GetTransform</a>() { <span class="keywordflow">return</span> transform; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_sprite.html#ac1bb04c8273d83ec24992538438a0b9d">   57</a></span>    <span class="keyword">inline</span> XMFLOAT4&amp; <a class="code hl_function" href="class_sprite.html#ac1bb04c8273d83ec24992538438a0b9d">GetColor</a>() { <span class="keywordflow">return</span> color; }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a054a4c340c14c3d218b99e484bf83d21">Draw</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_sprite.html#ad361ec8a34fe4e50938b395c09ce2489">   68</a></span>    <span class="keyword">inline</span> BOOL <a class="code hl_function" href="class_sprite.html#ad361ec8a34fe4e50938b395c09ce2489">GetActive</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isActive; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_sprite.html#a4a5dc96004cd7301180dc8eb0a60ec8f">   74</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a4a5dc96004cd7301180dc8eb0a60ec8f">SetActive</a>(BOOL active) { isActive = active; }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// アライメントの計算に必要</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    ULONGLONG AligmentedSize(ULONGLONG size, ULONGLONG alignment);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// 位置回転スケーリングを持ったTransform</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_struct" href="struct_transform.html">Transform</a> transform;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// 頂点バッファビュー</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    D3D12_VERTEX_BUFFER_VIEW vbView;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// インデックスバッファビュー</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    D3D12_INDEX_BUFFER_VIEW ibView;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// 頂点バッファ</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ID3D12Resource* vertBuff;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// 頂点バッファアップロード用</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    ID3D12Resource* uploadBuff;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">// インデックスバッファ</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    ID3D12Resource* idxBuff;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// テクスチャバッファ</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    ID3D12Resource* texBuff;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// 定数バッファ</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    ID3D12Resource* constBuff;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// SRVとCBVを指すディスクリプタヒープ</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    ID3D12DescriptorHeap* descriHeap;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// アップロード用アロケータ</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    ID3D12CommandAllocator* uploadAllocator;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// アップロード用コマンドリスト</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    ID3D12GraphicsCommandList* uploadCmdList;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// アップロード用コマンドキュー</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    ID3D12CommandQueue* uploadCmdQueue;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// 専用フェンス</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    ID3D12Fence* fence;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="comment">// 専用のフェンスの完了数</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    UINT64&amp; fenceVal;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// デフォルト引数用</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">static</span> UINT64 fenceValDefault;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// 色情報</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    XMFLOAT4 color;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">// 描画してもいいか</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    BOOL isActive;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// 画像の名前</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    WSTR imageName;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="comment">// 重複防止のためのテクスチャキャッシュ</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">static</span> std::map&lt;std::wstring, ID3D12Resource*&gt; texBuffCache;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">// 重複防止のためのメタデータキャッシュ</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">static</span> std::map&lt;std::wstring, TexMetadata&gt; metadataCache;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="comment">// 重複防止のための画像本体キャッシュ</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">static</span> std::map&lt;std::wstring, ScratchImage&gt; scratchImgCache;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>};</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="ttc" id="aclass_sprite_html_a054a4c340c14c3d218b99e484bf83d21"><div class="ttname"><a href="class_sprite.html#a054a4c340c14c3d218b99e484bf83d21">Sprite::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition</b> Sprite.cpp:441</div></div>
+<div class="ttc" id="aclass_sprite_html_a172fdd8b0b02f52b77e5718ba0d866d8"><div class="ttname"><a href="class_sprite.html#a172fdd8b0b02f52b77e5718ba0d866d8">Sprite::GetTransform</a></div><div class="ttdeci">Transform &amp; GetTransform()</div><div class="ttdoc">Transform要素を直に渡す</div><div class="ttdef"><b>Definition</b> Sprite.h:51</div></div>
+<div class="ttc" id="aclass_sprite_html_a4a5dc96004cd7301180dc8eb0a60ec8f"><div class="ttname"><a href="class_sprite.html#a4a5dc96004cd7301180dc8eb0a60ec8f">Sprite::SetActive</a></div><div class="ttdeci">void SetActive(BOOL active)</div><div class="ttdoc">描画するかどうかの変更</div><div class="ttdef"><b>Definition</b> Sprite.h:74</div></div>
+<div class="ttc" id="aclass_sprite_html_a872fe467686e87cb99df39b9c7fe8ad5"><div class="ttname"><a href="class_sprite.html#a872fe467686e87cb99df39b9c7fe8ad5">Sprite::CacheDelete</a></div><div class="ttdeci">static void CacheDelete()</div><div class="ttdoc">ゲーム終了時にキャッシュ解放用</div><div class="ttdef"><b>Definition</b> Sprite.cpp:426</div></div>
+<div class="ttc" id="aclass_sprite_html_aa206be14329f5664b2b9880426032b13"><div class="ttname"><a href="class_sprite.html#aa206be14329f5664b2b9880426032b13">Sprite::Sprite</a></div><div class="ttdeci">Sprite(WSTR, ID3D12Fence *=nullptr, UINT64 &amp;=fenceValDefault)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> Sprite.cpp:15</div></div>
+<div class="ttc" id="aclass_sprite_html_ac1bb04c8273d83ec24992538438a0b9d"><div class="ttname"><a href="class_sprite.html#ac1bb04c8273d83ec24992538438a0b9d">Sprite::GetColor</a></div><div class="ttdeci">XMFLOAT4 &amp; GetColor()</div><div class="ttdoc">Color要素を直に渡す</div><div class="ttdef"><b>Definition</b> Sprite.h:57</div></div>
+<div class="ttc" id="aclass_sprite_html_ad361ec8a34fe4e50938b395c09ce2489"><div class="ttname"><a href="class_sprite.html#ad361ec8a34fe4e50938b395c09ce2489">Sprite::GetActive</a></div><div class="ttdeci">BOOL GetActive() const</div><div class="ttdoc">描画してもいいかのチェック</div><div class="ttdef"><b>Definition</b> Sprite.h:68</div></div>
+<div class="ttc" id="aclass_sprite_html_add0ff195ae5d2713d3afdf152f0b9a46"><div class="ttname"><a href="class_sprite.html#add0ff195ae5d2713d3afdf152f0b9a46">Sprite::‾Sprite</a></div><div class="ttdeci">‾Sprite()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition</b> Sprite.cpp:395</div></div>
+<div class="ttc" id="astruct_const_buffer_data_html"><div class="ttname"><a href="struct_const_buffer_data.html">ConstBufferData</a></div><div class="ttdef"><b>Definition</b> Sprite.h:5</div></div>
+<div class="ttc" id="astruct_transform_html"><div class="ttname"><a href="struct_transform.html">Transform</a></div><div class="ttdef"><b>Definition</b> Sprite.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_8b38f03ef82065e18c0f41c1781fd896.html">BreakBlock</a></li><li class="navelem"><b>Sprite.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
