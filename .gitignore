@@ -1,11 +1,33 @@
+*/build/
+*/bin/
+*/out/
+*/Debug/
+*/Release/
+*/x64/
+*/x86/
+*/Shaders/
+.vs/
+
+
 # Prerequisites
 *.d
 
 # Compiled Object files
-*.slo
-*.lo
-*.o
+
+*.vcxproj.user
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+*.ipch
+*.iobj
+*.idb
+*.pdb
 *.obj
+*.exe
+*.log
+*.ilk
 
 # Precompiled Headers
 *.gch
@@ -30,3 +52,5 @@
 *.exe
 *.out
 *.app
+
+*.asset
